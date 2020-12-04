@@ -3,18 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0943E2C4587BACD8C6F66692 /* Pods_ColorfulTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 820518C9F6C61D34F8916663 /* Pods_ColorfulTests.framework */; };
+		7F7444AE257ABC95004BB2A2 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7444AD257ABC95004BB2A2 /* MainVC.swift */; };
 		9DE91AD62578F6BC0079C7F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE91AD52578F6BC0079C7F4 /* AppDelegate.swift */; };
 		9DE91AD82578F6BC0079C7F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE91AD72578F6BC0079C7F4 /* SceneDelegate.swift */; };
-		9DE91ADA2578F6BC0079C7F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE91AD92578F6BC0079C7F4 /* ViewController.swift */; };
 		9DE91ADD2578F6BC0079C7F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE91ADB2578F6BC0079C7F4 /* Main.storyboard */; };
 		9DE91ADF2578F6BF0079C7F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DE91ADE2578F6BF0079C7F4 /* Assets.xcassets */; };
 		9DE91AE22578F6BF0079C7F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE91AE02578F6BF0079C7F4 /* LaunchScreen.storyboard */; };
 		9DE91AED2578F6BF0079C7F4 /* ColorfulTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE91AEC2578F6BF0079C7F4 /* ColorfulTests.swift */; };
 		9DE91AF82578F6BF0079C7F4 /* ColorfulUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE91AF72578F6BF0079C7F4 /* ColorfulUITests.swift */; };
+		B194089FC2F71573F1321A1F /* Pods_Colorful.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC78702DEB293653EDD95E2 /* Pods_Colorful.framework */; };
+		E87F220A84F6178982417327 /* Pods_Colorful_ColorfulUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95523E7BC736F82813C1E8ED /* Pods_Colorful_ColorfulUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +38,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0962F63CB137ED2AA7DF808B /* Pods-Colorful.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Colorful.release.xcconfig"; path = "Target Support Files/Pods-Colorful/Pods-Colorful.release.xcconfig"; sourceTree = "<group>"; };
+		1532B31DD479B1E00A531633 /* Pods-Colorful.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Colorful.debug.xcconfig"; path = "Target Support Files/Pods-Colorful/Pods-Colorful.debug.xcconfig"; sourceTree = "<group>"; };
+		73B272007F05D401F90740CD /* Pods-Colorful-ColorfulUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Colorful-ColorfulUITests.release.xcconfig"; path = "Target Support Files/Pods-Colorful-ColorfulUITests/Pods-Colorful-ColorfulUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7F7444AD257ABC95004BB2A2 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		820518C9F6C61D34F8916663 /* Pods_ColorfulTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColorfulTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95523E7BC736F82813C1E8ED /* Pods_Colorful_ColorfulUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Colorful_ColorfulUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D61E95A9B7E972464983A11 /* Pods-Colorful-ColorfulUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Colorful-ColorfulUITests.debug.xcconfig"; path = "Target Support Files/Pods-Colorful-ColorfulUITests/Pods-Colorful-ColorfulUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9DE91AD22578F6BC0079C7F4 /* Colorful.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Colorful.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE91AD52578F6BC0079C7F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DE91AD72578F6BC0079C7F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9DE91AD92578F6BC0079C7F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9DE91ADC2578F6BC0079C7F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DE91ADE2578F6BF0079C7F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DE91AE12578F6BF0079C7F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +58,9 @@
 		9DE91AF32578F6BF0079C7F4 /* ColorfulUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorfulUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE91AF72578F6BF0079C7F4 /* ColorfulUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorfulUITests.swift; sourceTree = "<group>"; };
 		9DE91AF92578F6BF0079C7F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E5EA923A5C1F4D9AFB8653F /* Pods-ColorfulTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorfulTests.release.xcconfig"; path = "Target Support Files/Pods-ColorfulTests/Pods-ColorfulTests.release.xcconfig"; sourceTree = "<group>"; };
+		A95AD74E7F3D5B56172EEE38 /* Pods-ColorfulTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorfulTests.debug.xcconfig"; path = "Target Support Files/Pods-ColorfulTests/Pods-ColorfulTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FDC78702DEB293653EDD95E2 /* Pods_Colorful.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Colorful.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B194089FC2F71573F1321A1F /* Pods_Colorful.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0943E2C4587BACD8C6F66692 /* Pods_ColorfulTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E87F220A84F6178982417327 /* Pods_Colorful_ColorfulUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7DD3635930A4AFEC5EADCEE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDC78702DEB293653EDD95E2 /* Pods_Colorful.framework */,
+				95523E7BC736F82813C1E8ED /* Pods_Colorful_ColorfulUITests.framework */,
+				820518C9F6C61D34F8916663 /* Pods_ColorfulTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9DE91AC92578F6BB0079C7F4 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +108,8 @@
 				9DE91AEB2578F6BF0079C7F4 /* ColorfulTests */,
 				9DE91AF62578F6BF0079C7F4 /* ColorfulUITests */,
 				9DE91AD32578F6BC0079C7F4 /* Products */,
+				D8F4807A68A3422B900CD7AE /* Pods */,
+				7DD3635930A4AFEC5EADCEE3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,7 +222,7 @@
 		9DE91B1C2578F8A00079C7F4 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				9DE91AD92578F6BC0079C7F4 /* ViewController.swift */,
+				7F7444AD257ABC95004BB2A2 /* MainVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -208,6 +235,19 @@
 			path = Splash;
 			sourceTree = "<group>";
 		};
+		D8F4807A68A3422B900CD7AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1532B31DD479B1E00A531633 /* Pods-Colorful.debug.xcconfig */,
+				0962F63CB137ED2AA7DF808B /* Pods-Colorful.release.xcconfig */,
+				9D61E95A9B7E972464983A11 /* Pods-Colorful-ColorfulUITests.debug.xcconfig */,
+				73B272007F05D401F90740CD /* Pods-Colorful-ColorfulUITests.release.xcconfig */,
+				A95AD74E7F3D5B56172EEE38 /* Pods-ColorfulTests.debug.xcconfig */,
+				9E5EA923A5C1F4D9AFB8653F /* Pods-ColorfulTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -215,9 +255,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9DE91AFC2578F6BF0079C7F4 /* Build configuration list for PBXNativeTarget "Colorful" */;
 			buildPhases = (
+				E4CD0D2AFC13911F531B96C5 /* [CP] Check Pods Manifest.lock */,
 				9DE91ACE2578F6BC0079C7F4 /* Sources */,
 				9DE91ACF2578F6BC0079C7F4 /* Frameworks */,
 				9DE91AD02578F6BC0079C7F4 /* Resources */,
+				E9ADE46E86597448AFEF1159 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,6 +274,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9DE91AFF2578F6BF0079C7F4 /* Build configuration list for PBXNativeTarget "ColorfulTests" */;
 			buildPhases = (
+				2D8D550AE0391024F16E2173 /* [CP] Check Pods Manifest.lock */,
 				9DE91AE42578F6BF0079C7F4 /* Sources */,
 				9DE91AE52578F6BF0079C7F4 /* Frameworks */,
 				9DE91AE62578F6BF0079C7F4 /* Resources */,
@@ -250,9 +293,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9DE91B022578F6BF0079C7F4 /* Build configuration list for PBXNativeTarget "ColorfulUITests" */;
 			buildPhases = (
+				3F65E2B427B39722E2B3C67C /* [CP] Check Pods Manifest.lock */,
 				9DE91AEF2578F6BF0079C7F4 /* Sources */,
 				9DE91AF02578F6BF0079C7F4 /* Frameworks */,
 				9DE91AF12578F6BF0079C7F4 /* Resources */,
+				EFA5CD00B3876AD9DC41F47D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -333,13 +378,116 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2D8D550AE0391024F16E2173 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ColorfulTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F65E2B427B39722E2B3C67C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Colorful-ColorfulUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4CD0D2AFC13911F531B96C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Colorful-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9ADE46E86597448AFEF1159 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Colorful/Pods-Colorful-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Colorful/Pods-Colorful-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Colorful/Pods-Colorful-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFA5CD00B3876AD9DC41F47D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Colorful-ColorfulUITests/Pods-Colorful-ColorfulUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Colorful-ColorfulUITests/Pods-Colorful-ColorfulUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Colorful-ColorfulUITests/Pods-Colorful-ColorfulUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9DE91ACE2578F6BC0079C7F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DE91ADA2578F6BC0079C7F4 /* ViewController.swift in Sources */,
 				9DE91AD62578F6BC0079C7F4 /* AppDelegate.swift in Sources */,
+				7F7444AE257ABC95004BB2A2 /* MainVC.swift in Sources */,
 				9DE91AD82578F6BC0079C7F4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,6 +661,7 @@
 		};
 		9DE91AFD2578F6BF0079C7F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1532B31DD479B1E00A531633 /* Pods-Colorful.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -533,6 +682,7 @@
 		};
 		9DE91AFE2578F6BF0079C7F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0962F63CB137ED2AA7DF808B /* Pods-Colorful.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -553,6 +703,7 @@
 		};
 		9DE91B002578F6BF0079C7F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A95AD74E7F3D5B56172EEE38 /* Pods-ColorfulTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -575,6 +726,7 @@
 		};
 		9DE91B012578F6BF0079C7F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E5EA923A5C1F4D9AFB8653F /* Pods-ColorfulTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -597,6 +749,7 @@
 		};
 		9DE91B032578F6BF0079C7F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D61E95A9B7E972464983A11 /* Pods-Colorful-ColorfulUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -617,6 +770,7 @@
 		};
 		9DE91B042578F6BF0079C7F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73B272007F05D401F90740CD /* Pods-Colorful-ColorfulUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

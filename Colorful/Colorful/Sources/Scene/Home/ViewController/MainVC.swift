@@ -9,11 +9,13 @@ import UIKit
 
 class MainVC: UIViewController {
 
+    @IBOutlet weak var writingCollectionView: UICollectionView!
+    
+    @IBOutlet weak var pictureCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
-    
-
 
 }

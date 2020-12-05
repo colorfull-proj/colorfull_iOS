@@ -46,7 +46,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="exM-TH-Rdi">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="WritingCVC" reuseIdentifier="WritingCVC" id="exM-TH-Rdi" customClass="WritingCVC" customModule="Colorful" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="171"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="X4z-li-brX">
@@ -107,6 +107,16 @@
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="375" height="171"/>
+                                        <connections>
+                                            <outlet property="backgroundImg" destination="fMz-ZX-7Cx" id="vae-GL-9vQ"/>
+                                            <outlet property="commentCountLabel" destination="1sL-Hn-IPm" id="LcB-JM-uv6"/>
+                                            <outlet property="commentImg" destination="cYA-GW-VN9" id="3X9-wA-Se6"/>
+                                            <outlet property="contentLabel" destination="NIZ-w4-d5s" id="Q88-pT-z0u"/>
+                                            <outlet property="heartCountLabel" destination="eVd-fH-y3V" id="Ny7-XL-kQM"/>
+                                            <outlet property="heartImg" destination="cCz-JZ-Ktd" id="sZb-tD-5d1"/>
+                                            <outlet property="nicknameLabel" destination="YRz-UB-Ev3" id="TLy-Xx-Ngf"/>
+                                            <outlet property="titleLabel" destination="scQ-eL-GT2" id="BDp-b0-LnI"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -129,17 +139,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eB2-CN-dp0">
-                                    <size key="itemSize" width="143" height="127"/>
+                                    <size key="itemSize" width="143" height="125"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hTb-oe-dE1">
-                                        <rect key="frame" x="0.0" y="0.0" width="141" height="127"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="PictureCVC" reuseIdentifier="PictureCVC" id="hTb-oe-dE1" customClass="PictureCVC" customModule="Colorful" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="141" height="125"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rgx-Dm-Opm">
-                                            <rect key="frame" x="0.0" y="0.0" width="141" height="127"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="141" height="125"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="homeImg1Img" translatesAutoresizingMaskIntoConstraints="NO" id="dW3-1J-q6b">
@@ -150,7 +160,10 @@
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <size key="customSize" width="141" height="127"/>
+                                        <size key="customSize" width="141" height="125"/>
+                                        <connections>
+                                            <outlet property="pictureImg" destination="dW3-1J-q6b" id="xhG-nv-PON"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -159,6 +172,10 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.074509803921568626" green="0.066666666666666666" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="pictureCollectionView" destination="lAY-Df-sOc" id="osH-Xf-9k6"/>
+                        <outlet property="writingCollectionView" destination="jzf-OE-Gmk" id="Esu-ey-WNs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -121,6 +121,45 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		7F7444E6257C09EB004BB2A2 /* Writing */ = {
+			isa = PBXGroup;
+			children = (
+				7F7444E8257C0A41004BB2A2 /* Cells */,
+				7F7444E7257C0A38004BB2A2 /* Models */,
+				7F7444E9257C0A47004BB2A2 /* ViewController */,
+				7F7444EA257C0A52004BB2A2 /* Storyboard */,
+			);
+			path = Writing;
+			sourceTree = "<group>";
+		};
+		7F7444E7257C0A38004BB2A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7F7444E8257C0A41004BB2A2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		7F7444E9257C0A47004BB2A2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7F7444EA257C0A52004BB2A2 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		9DE91AC92578F6BB0079C7F4 = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +231,7 @@
 		9DE91B132578F8640079C7F4 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				7F7444E6257C09EB004BB2A2 /* Writing */,
 				9DE91B1D2578F8BA0079C7F4 /* Splash */,
 				9DE91B1A2578F88E0079C7F4 /* Home */,
 				9DE91B142578F86F0079C7F4 /* Login */,

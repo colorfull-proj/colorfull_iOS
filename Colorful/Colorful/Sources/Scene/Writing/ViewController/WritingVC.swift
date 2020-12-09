@@ -25,9 +25,11 @@ class WritingVC: UIViewController, MenuBarDelegagte {
     //MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .white
+        self.view.backgroundColor = .black
+        
 //        title = "Navigation Bar Title"
 //        navigationController?.hidesBarsOnSwipe = true
+        
         setupCustomTabBar()
         setupPageCollectionView()
     }
@@ -36,22 +38,26 @@ class WritingVC: UIViewController, MenuBarDelegagte {
         self.view.addSubview(customMenuBar)
         customMenuBar.delegate = self
         customMenuBar.translatesAutoresizingMaskIntoConstraints = false
-        customMenuBar.indicatorViewWidthConstraint.constant = self.view.frame.width / 4
+        customMenuBar.indicatorViewWidthConstraint.constant = self.view.frame.width / 5
+        customMenuBar.tintColor = .orange
+        
         customMenuBar.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
         customMenuBar.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
+        
         customMenuBar.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor).isActive = true
         customMenuBar.heightAnchor.constraint(equalToConstant: 60).isActive = true
     }
     
     func customMenuBar(scrollTo index: Int) {
-        let indexPath = IndexPath(row: index, section: 0)
+        let indexPath = IndexPath(row: index, section: 3)
         self.pageCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
     }
     
     func setupPageCollectionView(){
         pageCollectionView.delegate = self
         pageCollectionView.dataSource = self
-        pageCollectionView.backgroundColor = .gray
+        pageCollectionView.backgroundColor = .black
+        
         pageCollectionView.showsHorizontalScrollIndicator = false
         pageCollectionView.isPagingEnabled = true
         
@@ -73,16 +79,16 @@ extension WritingVC: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return 3
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        customMenuBar.indicatorViewLeadingConstraint.constant = scrollView.contentOffset.x / 4
+        customMenuBar.indicatorViewLeadingConstraint.constant = scrollView.contentOffset.x / 3
     }
     
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-        let itemAt = Int(targetContentOffset.pointee.x / self.view.frame.width)
-        let indexPath = IndexPath(item: itemAt, section: 0)
+        let itemAt = Int(targetContentOffset.pointee.x / self.view.frame.width - 200)
+        let indexPath = IndexPath(item: itemAt, section: 3)
         customMenuBar.customTabBarCollectionView.selectItem(at: indexPath, animated: true, scrollPosition: [])
     }
 }

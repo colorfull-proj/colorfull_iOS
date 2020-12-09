@@ -9,26 +9,21 @@ import UIKit
 
 class CustomCell: UICollectionViewCell {
     
-    var label: UILabel = {
-        let label = UILabel()
-        label.text = "Tab"
-        label.textAlignment = .center
-        label.font = UIFont.systemFont(ofSize: 20, weight: .bold)
-        label.textColor = .lightGray
-        label.translatesAutoresizingMaskIntoConstraints = false
-        return label
-    }()
+   
+    @IBOutlet weak var menu1Tabel: UILabel!
+    
     override var isSelected: Bool {
         didSet{
             print("Changed")
-            self.label.textColor = isSelected ? .black : .lightGray
+            self.menu1Tabel.textColor = isSelected ? .orange: .gray
+            
         }
     }
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.addSubview(label)
-        label.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        label.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+        self.addSubview(menu1Tabel)
+        menu1Tabel.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        menu1Tabel.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
     }
     
 }

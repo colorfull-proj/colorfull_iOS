@@ -11,7 +11,7 @@ class PageCell: UICollectionViewCell {
 
     var label: UILabel = {
         let label = UILabel()
-        label.textColor = .black
+        label.textColor = .blue
         label.textAlignment = .center
         label.font = UIFont.systemFont(ofSize: 40, weight: .bold)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -21,7 +21,7 @@ class PageCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.addSubview(label)
-        self.backgroundColor = .gray
+        self.backgroundColor = .green
         label.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         label.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
     }

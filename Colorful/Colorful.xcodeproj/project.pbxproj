@@ -22,6 +22,7 @@
 		7FD538BD2581640F0034D9F0 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FD538BB2581640F0034D9F0 /* CustomCell.xib */; };
 		7FD538C3258164270034D9F0 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD538C1258164270034D9F0 /* PageCell.swift */; };
 		7FD538C4258164270034D9F0 /* PageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FD538C2258164270034D9F0 /* PageCell.xib */; };
+		7FD5393625818BFC0034D9F0 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD5393525818BFC0034D9F0 /* UIColor.swift */; };
 		9DE91AD62578F6BC0079C7F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE91AD52578F6BC0079C7F4 /* AppDelegate.swift */; };
 		9DE91AD82578F6BC0079C7F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE91AD72578F6BC0079C7F4 /* SceneDelegate.swift */; };
 		9DE91ADD2578F6BC0079C7F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE91ADB2578F6BC0079C7F4 /* Main.storyboard */; };
@@ -68,6 +69,7 @@
 		7FD538BB2581640F0034D9F0 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		7FD538C1258164270034D9F0 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 		7FD538C2258164270034D9F0 /* PageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PageCell.xib; sourceTree = "<group>"; };
+		7FD5393525818BFC0034D9F0 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		820518C9F6C61D34F8916663 /* Pods_ColorfulTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColorfulTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95523E7BC736F82813C1E8ED /* Pods_Colorful_ColorfulUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Colorful_ColorfulUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D61E95A9B7E972464983A11 /* Pods-Colorful-ColorfulUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Colorful-ColorfulUITests.debug.xcconfig"; path = "Target Support Files/Pods-Colorful-ColorfulUITests/Pods-Colorful-ColorfulUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -214,6 +216,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		7FD5393425818BE40034D9F0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7FD5393525818BFC0034D9F0 /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		9DE91AC92578F6BB0079C7F4 = {
 			isa = PBXGroup;
 			children = (
@@ -277,6 +287,7 @@
 		9DE91B0F2578F7CB0079C7F4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7FD5393425818BE40034D9F0 /* Extensions */,
 				7F7445202581240E004BB2A2 /* Services */,
 				7F74451F25812403004BB2A2 /* Models */,
 				9DE91ADE2578F6BF0079C7F4 /* Assets.xcassets */,
@@ -609,6 +620,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DE91AD62578F6BC0079C7F4 /* AppDelegate.swift in Sources */,
+				7FD5393625818BFC0034D9F0 /* UIColor.swift in Sources */,
 				7FD538BC2581640F0034D9F0 /* CustomCell.swift in Sources */,
 				7F7444AE257ABC95004BB2A2 /* MainVC.swift in Sources */,
 				7FD538AE258162C80034D9F0 /* MenuBar.swift in Sources */,

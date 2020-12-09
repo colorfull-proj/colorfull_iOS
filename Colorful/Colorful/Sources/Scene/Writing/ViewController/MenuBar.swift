@@ -98,7 +98,7 @@ extension MenuBarView: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
         guard let cell = collectionView.cellForItem(at: indexPath) as? CustomCell else {return}
-        cell.label.textColor = .lightGray
+        cell.menu1Tabel.textColor = .lightGray
     }
 }
 //MARK:- UICollectionViewDelegateFlowLayout

@@ -1,19 +1,19 @@
 {
   "images" : [
     {
-      "scale" : "1x",
+      "idiom" : "universal",
       "filename" : "naviTextIc.png",
-      "idiom" : "universal"
+      "scale" : "1x"
     },
     {
-      "scale" : "2x",
       "idiom" : "universal",
-      "filename" : "naviTextIc@2x.png"
+      "filename" : "naviTextIc@2x.png",
+      "scale" : "2x"
     },
     {
+      "filename" : "naviTextIc@3x.png",
       "scale" : "3x",
-      "idiom" : "universal",
-      "filename" : "naviTextIc@3x.png"
+      "idiom" : "universal"
     }
   ],
   "info" : {

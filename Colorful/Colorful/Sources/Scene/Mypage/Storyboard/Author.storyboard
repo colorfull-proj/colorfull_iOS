@@ -5,7 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,18 +16,87 @@
                     <view key="view" contentMode="scaleToFill" id="gDy-MT-RxD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LHc-ac-Ofr">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gd3-wn-omF">
+                                    <size key="itemSize" width="386" height="138"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="15" minY="20" maxX="15" maxY="20"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AuthorCell" id="1NM-s2-aXY" customClass="AuthorCell" customModule="Colorful" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="20" width="374" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8Um-jS-yLD">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myBasicImg" translatesAutoresizingMaskIntoConstraints="NO" id="2aK-mv-WFo">
+                                                    <rect key="frame" x="10" y="10" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="2aK-mv-WFo" secondAttribute="height" multiplier="1:1" id="Ybd-9Y-HAX"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="cVe-Zm-EeB">
+                                                    <rect key="frame" x="75" y="16" width="284" height="38.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSi-0O-tXj">
+                                                            <rect key="frame" x="0.0" y="0.0" width="284" height="17"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUI-gK-5t1">
+                                                            <rect key="frame" x="0.0" y="24" width="284" height="14.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.16862745098039217" green="0.16078431372549018" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="cVe-Zm-EeB" firstAttribute="leading" secondItem="2aK-mv-WFo" secondAttribute="trailing" constant="15" id="02c-eX-C1d"/>
+                                                <constraint firstItem="2aK-mv-WFo" firstAttribute="leading" secondItem="8Um-jS-yLD" secondAttribute="leading" constant="10" id="Hhc-tw-oXZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="cVe-Zm-EeB" secondAttribute="trailing" constant="15" id="I29-XY-c2Q"/>
+                                                <constraint firstItem="2aK-mv-WFo" firstAttribute="top" secondItem="8Um-jS-yLD" secondAttribute="top" constant="10" id="UjJ-wo-yKS"/>
+                                                <constraint firstItem="cVe-Zm-EeB" firstAttribute="centerY" secondItem="8Um-jS-yLD" secondAttribute="centerY" id="gHD-1f-C3m"/>
+                                                <constraint firstAttribute="bottom" secondItem="2aK-mv-WFo" secondAttribute="bottom" constant="10" id="zea-aq-g6R"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="374" height="70"/>
+                                        <connections>
+                                            <outlet property="introduceLabel" destination="lUI-gK-5t1" id="rlE-sz-kZ8"/>
+                                            <outlet property="nicknameLabel" destination="dSi-0O-tXj" id="hGE-za-uJf"/>
+                                            <outlet property="profileImageView" destination="2aK-mv-WFo" id="0im-5y-957"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="HhC-xX-kVb"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.066666666666666666" green="0.070588235294117646" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="HhC-xX-kVb" firstAttribute="trailing" secondItem="LHc-ac-Ofr" secondAttribute="trailing" id="255-Xi-fpn"/>
+                            <constraint firstItem="LHc-ac-Ofr" firstAttribute="leading" secondItem="HhC-xX-kVb" secondAttribute="leading" id="97J-Ls-ByR"/>
+                            <constraint firstItem="LHc-ac-Ofr" firstAttribute="top" secondItem="HhC-xX-kVb" secondAttribute="top" id="Be2-RU-e0x"/>
+                            <constraint firstAttribute="bottom" secondItem="LHc-ac-Ofr" secondAttribute="bottom" id="ogn-Ev-8PH"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="authorCollectionView" destination="LHc-ac-Ofr" id="pU4-mq-bnV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hba-yd-MiP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="149" y="138"/>
+            <point key="canvasLocation" x="147.82608695652175" y="137.94642857142856"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="myBasicImg" width="65" height="65"/>
     </resources>
 </document>

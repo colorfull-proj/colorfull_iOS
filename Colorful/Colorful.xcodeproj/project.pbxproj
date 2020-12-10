@@ -25,6 +25,17 @@
 		7FD5395E25823AA80034D9F0 /* GenderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD5395D25823AA80034D9F0 /* GenderVC.swift */; };
 		7FD5398125824A490034D9F0 /* Post.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FD5398025824A490034D9F0 /* Post.storyboard */; };
 		7FD5398625824A570034D9F0 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD5398525824A570034D9F0 /* PostVC.swift */; };
+		9D5F9EC32582798B00742F22 /* AuthorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5F9EC22582798B00742F22 /* AuthorVC.swift */; };
+		9D5F9ECB2582799900742F22 /* MyPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5F9EC72582799900742F22 /* MyPageVC.swift */; };
+		9D5F9ECC2582799900742F22 /* MypostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5F9EC82582799900742F22 /* MypostVC.swift */; };
+		9D5F9ECD2582799900742F22 /* LikeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5F9EC92582799900742F22 /* LikeVC.swift */; };
+		9D5F9ECE2582799900742F22 /* MypictureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5F9ECA2582799900742F22 /* MypictureVC.swift */; };
+		9D5F9ED7258279A200742F22 /* Like.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D5F9ED2258279A200742F22 /* Like.storyboard */; };
+		9D5F9ED8258279A200742F22 /* Mypage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D5F9ED3258279A200742F22 /* Mypage.storyboard */; };
+		9D5F9ED9258279A200742F22 /* Mypicture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D5F9ED4258279A200742F22 /* Mypicture.storyboard */; };
+		9D5F9EDA258279A200742F22 /* Mypost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D5F9ED5258279A200742F22 /* Mypost.storyboard */; };
+		9D5F9EDB258279A200742F22 /* Author.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D5F9ED6258279A200742F22 /* Author.storyboard */; };
+		9D5F9EE0258279B000742F22 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5F9EDF258279B000742F22 /* PostCell.swift */; };
 		9DE91AD62578F6BC0079C7F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE91AD52578F6BC0079C7F4 /* AppDelegate.swift */; };
 		9DE91AD82578F6BC0079C7F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE91AD72578F6BC0079C7F4 /* SceneDelegate.swift */; };
 		9DE91ADD2578F6BC0079C7F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE91ADB2578F6BC0079C7F4 /* Main.storyboard */; };
@@ -76,6 +87,17 @@
 		7FD5398525824A570034D9F0 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		820518C9F6C61D34F8916663 /* Pods_ColorfulTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColorfulTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95523E7BC736F82813C1E8ED /* Pods_Colorful_ColorfulUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Colorful_ColorfulUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D5F9EC22582798B00742F22 /* AuthorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthorVC.swift; path = Colorful/Sources/Scene/Mypage/ViewController/AuthorVC.swift; sourceTree = SOURCE_ROOT; };
+		9D5F9EC72582799900742F22 /* MyPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyPageVC.swift; path = Colorful/Sources/Scene/Mypage/ViewController/MyPageVC.swift; sourceTree = SOURCE_ROOT; };
+		9D5F9EC82582799900742F22 /* MypostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MypostVC.swift; path = Colorful/Sources/Scene/Mypage/ViewController/MypostVC.swift; sourceTree = SOURCE_ROOT; };
+		9D5F9EC92582799900742F22 /* LikeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LikeVC.swift; path = Colorful/Sources/Scene/Mypage/ViewController/LikeVC.swift; sourceTree = SOURCE_ROOT; };
+		9D5F9ECA2582799900742F22 /* MypictureVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MypictureVC.swift; path = Colorful/Sources/Scene/Mypage/ViewController/MypictureVC.swift; sourceTree = SOURCE_ROOT; };
+		9D5F9ED2258279A200742F22 /* Like.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Like.storyboard; path = Colorful/Sources/Scene/Mypage/Storyboard/Like.storyboard; sourceTree = SOURCE_ROOT; };
+		9D5F9ED3258279A200742F22 /* Mypage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Mypage.storyboard; path = Colorful/Sources/Scene/Mypage/Storyboard/Mypage.storyboard; sourceTree = SOURCE_ROOT; };
+		9D5F9ED4258279A200742F22 /* Mypicture.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Mypicture.storyboard; path = Colorful/Sources/Scene/Mypage/Storyboard/Mypicture.storyboard; sourceTree = SOURCE_ROOT; };
+		9D5F9ED5258279A200742F22 /* Mypost.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Mypost.storyboard; path = Colorful/Sources/Scene/Mypage/Storyboard/Mypost.storyboard; sourceTree = SOURCE_ROOT; };
+		9D5F9ED6258279A200742F22 /* Author.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Author.storyboard; path = Colorful/Sources/Scene/Mypage/Storyboard/Author.storyboard; sourceTree = SOURCE_ROOT; };
+		9D5F9EDF258279B000742F22 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostCell.swift; path = Colorful/Sources/Scene/Mypage/CollectionView/PostCell.swift; sourceTree = SOURCE_ROOT; };
 		9D61E95A9B7E972464983A11 /* Pods-Colorful-ColorfulUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Colorful-ColorfulUITests.debug.xcconfig"; path = "Target Support Files/Pods-Colorful-ColorfulUITests/Pods-Colorful-ColorfulUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9DE91AD22578F6BC0079C7F4 /* Colorful.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Colorful.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE91AD52578F6BC0079C7F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -269,6 +291,48 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		9D5F9EA52582795E00742F22 /* Mypage */ = {
+			isa = PBXGroup;
+			children = (
+				9D5F9EA62582795E00742F22 /* CollectionView */,
+				9D5F9EA82582795E00742F22 /* Storyboard */,
+				9D5F9EAE2582795E00742F22 /* ViewController */,
+			);
+			path = Mypage;
+			sourceTree = "<group>";
+		};
+		9D5F9EA62582795E00742F22 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				9D5F9EDF258279B000742F22 /* PostCell.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		9D5F9EA82582795E00742F22 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				9D5F9ED3258279A200742F22 /* Mypage.storyboard */,
+				9D5F9ED5258279A200742F22 /* Mypost.storyboard */,
+				9D5F9ED6258279A200742F22 /* Author.storyboard */,
+				9D5F9ED2258279A200742F22 /* Like.storyboard */,
+				9D5F9ED4258279A200742F22 /* Mypicture.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		9D5F9EAE2582795E00742F22 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9D5F9EC92582799900742F22 /* LikeVC.swift */,
+				9D5F9EC72582799900742F22 /* MyPageVC.swift */,
+				9D5F9ECA2582799900742F22 /* MypictureVC.swift */,
+				9D5F9EC82582799900742F22 /* MypostVC.swift */,
+				9D5F9EC22582798B00742F22 /* AuthorVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		9DE91AC92578F6BB0079C7F4 = {
 			isa = PBXGroup;
 			children = (
@@ -343,6 +407,7 @@
 		9DE91B132578F8640079C7F4 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				9D5F9EA52582795E00742F22 /* Mypage */,
 				7FD5397B25824A010034D9F0 /* Post */,
 				7F744500257C0B94004BB2A2 /* TabBar */,
 				9DE91B1D2578F8BA0079C7F4 /* Splash */,
@@ -533,10 +598,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DE91AE22578F6BF0079C7F4 /* LaunchScreen.storyboard in Resources */,
+				9D5F9ED7258279A200742F22 /* Like.storyboard in Resources */,
 				7F7444EC257C0AE6004BB2A2 /* Writing.storyboard in Resources */,
+				9D5F9EDB258279A200742F22 /* Author.storyboard in Resources */,
 				9DE91ADF2578F6BF0079C7F4 /* Assets.xcassets in Resources */,
+				9D5F9ED8258279A200742F22 /* Mypage.storyboard in Resources */,
+				9D5F9EDA258279A200742F22 /* Mypost.storyboard in Resources */,
 				7FD5398125824A490034D9F0 /* Post.storyboard in Resources */,
 				9DE91ADD2578F6BC0079C7F4 /* Main.storyboard in Resources */,
+				9D5F9ED9258279A200742F22 /* Mypicture.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -669,6 +739,9 @@
 				7FD5394F2582389B0034D9F0 /* PageVC.swift in Sources */,
 				7FD5393625818BFC0034D9F0 /* UIColor.swift in Sources */,
 				7FD538BC2581640F0034D9F0 /* CustomCell.swift in Sources */,
+				9D5F9ECD2582799900742F22 /* LikeVC.swift in Sources */,
+				9D5F9EC32582798B00742F22 /* AuthorVC.swift in Sources */,
+				9D5F9ECC2582799900742F22 /* MypostVC.swift in Sources */,
 				7F7444AE257ABC95004BB2A2 /* MainVC.swift in Sources */,
 				7FD5395925823A840034D9F0 /* AgeVC.swift in Sources */,
 				7F74453925812856004BB2A2 /* HomePostData.swift in Sources */,
@@ -679,8 +752,11 @@
 				7F74452225812452004BB2A2 /* APIConstants.swift in Sources */,
 				7F7444FC257C0B40004BB2A2 /* WritingVC.swift in Sources */,
 				7F7444DA257BF9D3004BB2A2 /* PictureCVC.swift in Sources */,
+				9D5F9ECE2582799900742F22 /* MypictureVC.swift in Sources */,
+				9D5F9ECB2582799900742F22 /* MyPageVC.swift in Sources */,
 				7F7444D5257BF9C1004BB2A2 /* WritingCVC.swift in Sources */,
 				7FD5395E25823AA80034D9F0 /* GenderVC.swift in Sources */,
+				9D5F9EE0258279B000742F22 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

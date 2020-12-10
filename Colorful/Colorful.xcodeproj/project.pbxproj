@@ -324,10 +324,10 @@
 		9D5F9EAE2582795E00742F22 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				9D5F9EC92582799900742F22 /* LikeVC.swift */,
 				9D5F9EC72582799900742F22 /* MyPageVC.swift */,
-				9D5F9ECA2582799900742F22 /* MypictureVC.swift */,
 				9D5F9EC82582799900742F22 /* MypostVC.swift */,
+				9D5F9EC92582799900742F22 /* LikeVC.swift */,
+				9D5F9ECA2582799900742F22 /* MypictureVC.swift */,
 				9D5F9EC22582798B00742F22 /* AuthorVC.swift */,
 			);
 			path = ViewController;

@@ -32,4 +32,8 @@ extension MypictureVC: CategoryVCAble {
     var _view: UIView {
         return self.view
     }
+    
+    func calContentHeight() -> CGFloat {
+        return 10
+    }
 }

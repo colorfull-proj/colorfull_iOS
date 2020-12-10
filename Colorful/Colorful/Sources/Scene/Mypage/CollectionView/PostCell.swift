@@ -21,6 +21,8 @@ class PostCell: UICollectionViewCell {
     @IBOutlet weak var likeCountLabel: UILabel!
     @IBOutlet weak var commentCountLabel: UILabel!
     
+    @IBOutlet weak var widthConstraint: NSLayoutConstraint!
+    
     // MARK: - Init
     func bind(_ dto: PostCellDTO) {
         titleLabel.text = dto.title

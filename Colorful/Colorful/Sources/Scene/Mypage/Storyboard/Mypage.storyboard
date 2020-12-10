@@ -287,6 +287,8 @@
                             <constraint firstAttribute="bottom" secondItem="fy6-nF-jzI" secondAttribute="bottom" id="O1d-jL-Sjh"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="naviMypageIc" id="uNn-0f-gWz"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="authorCountLabel" destination="DCs-VD-PlP" id="szQ-Ar-Ldg"/>
                         <outlet property="containerView" destination="DhN-ai-cbx" id="oFW-La-L8E"/>
@@ -318,6 +320,7 @@
     </scenes>
     <resources>
         <image name="myBasicImg" width="65" height="65"/>
+        <image name="naviMypageIc" width="25" height="25"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -62,6 +62,8 @@
                             <constraint firstAttribute="bottom" secondItem="izl-CB-zju" secondAttribute="bottom" id="kL4-Iw-ccf"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="naviPlusIc" id="aNf-OV-bh6"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="ContentTextView" destination="IuG-Cm-vB8" id="dCR-Gu-jyC"/>
                         <outlet property="anonyLabel" destination="aMq-m0-J07" id="Wg2-ms-UCN"/>
@@ -77,6 +79,7 @@
     <resources>
         <image name="comIc" width="20" height="20"/>
         <image name="line" width="345" height="1.6666666269302368"/>
+        <image name="naviPlusIc" width="34" height="34"/>
         <image name="textBg" width="345" height="726"/>
     </resources>
 </document>

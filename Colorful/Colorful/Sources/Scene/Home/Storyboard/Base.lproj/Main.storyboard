@@ -30,7 +30,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jzf-OE-Gmk">
-                                <rect key="frame" x="15" y="356" width="345" height="171"/>
+                                <rect key="frame" x="15" y="356" width="345" height="159.66666666666663"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fH1-nP-SZr">
                                     <size key="itemSize" width="345" height="171"/>
@@ -40,7 +40,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="WritingCVC" reuseIdentifier="WritingCVC" id="exM-TH-Rdi" customClass="WritingCVC" customModule="Colorful" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="345" height="171"/>
+                                        <rect key="frame" x="0.0" y="-5.666666666666667" width="345" height="171"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="X4z-li-brX">
                                             <rect key="frame" x="0.0" y="0.0" width="345" height="171"/>
@@ -132,7 +132,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="인기 그림" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZq-1y-KM7">
-                                <rect key="frame" x="15" y="543" width="66.666666666666671" height="27"/>
+                                <rect key="frame" x="15" y="531.66666666666663" width="66.666666666666671" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="27" id="4uQ-qN-phi"/>
                                 </constraints>
@@ -141,7 +141,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lAY-Df-sOc">
-                                <rect key="frame" x="0.0" y="580" width="375" height="125"/>
+                                <rect key="frame" x="0.0" y="568.66666666666663" width="375" height="116.66666666666663"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eB2-CN-dp0">
                                     <size key="itemSize" width="143" height="125"/>
@@ -151,7 +151,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="PictureCVC" reuseIdentifier="PictureCVC" id="hTb-oe-dE1" customClass="PictureCVC" customModule="Colorful" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="141" height="125"/>
+                                        <rect key="frame" x="0.0" y="-4.333333333333333" width="141" height="125"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rgx-Dm-Opm">
                                             <rect key="frame" x="0.0" y="0.0" width="141" height="125"/>
@@ -221,6 +221,8 @@
                             <constraint firstItem="cge-fG-oGT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="unc-yK-6PH"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="naviHomeIc" id="6uY-oj-JAp"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="pictureCollectionView" destination="lAY-Df-sOc" id="osH-Xf-9k6"/>
                         <outlet property="writingCollectionView" destination="jzf-OE-Gmk" id="Esu-ey-WNs"/>
@@ -236,6 +238,7 @@
         <image name="homeImg1Img" width="125" height="125"/>
         <image name="likeIc" width="20" height="20"/>
         <image name="mainImg" width="163" height="205"/>
-        <image name="textBg" width="345" height="171"/>
+        <image name="naviHomeIc" width="26.666666030883789" height="25"/>
+        <image name="textBg" width="345" height="726"/>
     </resources>
 </document>

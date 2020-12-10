@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TOT-Ys-MeW">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PostVC-->
+        <scene sceneID="LpM-Tz-nKW">
+            <objects>
+                <viewController id="TOT-Ys-MeW" customClass="PostVC" customModule="Colorful" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dpL-9c-eON">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textBg" translatesAutoresizingMaskIntoConstraints="NO" id="izl-CB-zju">
+                                <rect key="frame" x="15" y="86" width="345" height="726"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="FUE-It-ue6">
+                                <rect key="frame" x="15" y="136" width="345" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="내용을 입력하세요" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="IuG-Cm-vB8">
+                                <rect key="frame" x="26" y="146" width="322" height="632"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.63137254899999995" green="0.63137254899999995" blue="0.63137254899999995" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="제목" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="lgc-89-PBU">
+                                <rect key="frame" x="27" y="104" width="321" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.63137254899999995" green="0.63137254899999995" blue="0.63137254899999995" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7yF-VK-wj8"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7yF-VK-wj8" firstAttribute="trailing" secondItem="izl-CB-zju" secondAttribute="trailing" constant="15" id="8m5-Mi-FyW"/>
+                            <constraint firstItem="izl-CB-zju" firstAttribute="leading" secondItem="7yF-VK-wj8" secondAttribute="leading" constant="15" id="GPL-vU-XOB"/>
+                            <constraint firstItem="izl-CB-zju" firstAttribute="top" secondItem="7yF-VK-wj8" secondAttribute="top" constant="42" id="fAJ-5M-jjF"/>
+                            <constraint firstAttribute="bottom" secondItem="izl-CB-zju" secondAttribute="bottom" id="kL4-Iw-ccf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ContentTextView" destination="IuG-Cm-vB8" id="dCR-Gu-jyC"/>
+                        <outlet property="titleTextField" destination="lgc-89-PBU" id="Xc4-af-m9h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oW3-Dt-084" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-455.19999999999999" y="187.68472906403943"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="line" width="345" height="1.6666666269302368"/>
+        <image name="textBg" width="345" height="726"/>
+    </resources>
+</document>

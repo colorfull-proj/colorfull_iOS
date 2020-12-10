@@ -57,10 +57,10 @@
             </objects>
             <point key="canvasLocation" x="1075" y="576"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--TabbarVC-->
         <scene sceneID="9Zn-Wi-mmZ">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="eiY-tB-Xyg" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="eiY-tB-Xyg" customClass="TabbarVC" customModule="Colorful" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="psf-KG-OJd">
                         <autoresizingMask key="autoresizingMask"/>

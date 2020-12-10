@@ -85,7 +85,7 @@
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bsw-9w-DX9"/>
-                        <color key="backgroundColor" red="0.066666666666666666" green="0.070588235294117646" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="PjZ-NO-Lnk" secondAttribute="bottom" id="JdR-Ji-kq5"/>
                             <constraint firstItem="PjZ-NO-Lnk" firstAttribute="leading" secondItem="bsw-9w-DX9" secondAttribute="leading" id="My7-o3-k9g"/>

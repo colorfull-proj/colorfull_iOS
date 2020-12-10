@@ -11,7 +11,7 @@
         <!--PostVC-->
         <scene sceneID="LpM-Tz-nKW">
             <objects>
-                <viewController id="TOT-Ys-MeW" customClass="PostVC" customModule="Colorful" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PostVC" id="TOT-Ys-MeW" customClass="PostVC" customModule="Colorful" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dpL-9c-eON">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

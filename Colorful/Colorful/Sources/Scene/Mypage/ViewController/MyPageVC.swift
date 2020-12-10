@@ -43,6 +43,10 @@ enum SelectCategory: Int, CaseIterable {
 }
 
 class MyPageVC: UIViewController {
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     // MARK: - UI
     @IBOutlet weak var nicknameLabel: UILabel!
     @IBOutlet weak var nickStateLabel: UILabel!

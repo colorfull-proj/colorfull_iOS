@@ -8,6 +8,9 @@
 import UIKit
 
 class MainVC: UIViewController {
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
     @IBOutlet weak var writingCollectionView: UICollectionView!
     

@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fy6-nF-jzI">
-                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="768"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ANq-e2-0rD">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="734"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="768"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vYp-5I-OyV">
                                                 <rect key="frame" x="158" y="15" width="59" height="59"/>
@@ -54,7 +54,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zgG-aR-zGK">
-                                                <rect key="frame" x="0.0" y="176" width="375" height="558"/>
+                                                <rect key="frame" x="0.0" y="176" width="375" height="592"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XE0-h5-Tco">
                                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
@@ -243,7 +243,7 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DhN-ai-cbx">
-                                                        <rect key="frame" x="0.0" y="97.666666666666714" width="375" height="460.33333333333326"/>
+                                                        <rect key="frame" x="0.0" y="97.666666666666714" width="375" height="494.33333333333326"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </view>
                                                 </subviews>
@@ -284,7 +284,7 @@
                             <constraint firstItem="fy6-nF-jzI" firstAttribute="top" secondItem="NFW-8H-U7j" secondAttribute="top" id="7eY-NY-Ckp"/>
                             <constraint firstItem="fy6-nF-jzI" firstAttribute="leading" secondItem="NFW-8H-U7j" secondAttribute="leading" id="8BV-tw-iG8"/>
                             <constraint firstItem="NFW-8H-U7j" firstAttribute="trailing" secondItem="fy6-nF-jzI" secondAttribute="trailing" id="C2w-Ad-YEN"/>
-                            <constraint firstItem="NFW-8H-U7j" firstAttribute="bottom" secondItem="fy6-nF-jzI" secondAttribute="bottom" id="O1d-jL-Sjh"/>
+                            <constraint firstAttribute="bottom" secondItem="fy6-nF-jzI" secondAttribute="bottom" id="O1d-jL-Sjh"/>
                         </constraints>
                     </view>
                     <connections>

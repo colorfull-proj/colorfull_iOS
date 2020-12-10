@@ -7,23 +7,48 @@
 
 import UIKit
 
+
+protocol PageIndexDelegate {
+    func SelectMenuItem(pageIndex: Int)
+    
+}
+
 class CustomCell: UICollectionViewCell {
     
-   
-    @IBOutlet weak var menu1Tabel: UILabel!
+    var delegate: PageIndexDelegate?
     
-    override var isSelected: Bool {
-        didSet{
-            print("Changed")
-            self.menu1Tabel.textColor = isSelected ? .orange: .gray
+    
+    @IBOutlet weak var menuLabel: UILabel!
+    @IBOutlet weak var menuBarView: UIView!
+    @IBOutlet weak var boundView: UIView!
+    
+    var collectionView: UICollectionView?
+    static let identifier: String = "CustomCell"
+    
+    
+   
+    
+    override var isHighlighted: Bool {
+        didSet {
+            menuLabel.font = isHighlighted ? .boldSystemFont(ofSize: 16) : .boldSystemFont(ofSize: 16)
             
+            UIView.animate(withDuration: 1.0, delay: 0, options: .curveEaseOut, animations: {
+                self.menuBarView.layoutIfNeeded()
+                self.menuBarView.tintColor = self.isSelected ? .orange  : .gray
+                
+            }, completion: nil)
         }
     }
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        self.addSubview(menu1Tabel)
-        menu1Tabel.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        menu1Tabel.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
-    }
     
+    
+    override var isSelected: Bool {
+        didSet {
+            menuLabel.font = isSelected ? .boldSystemFont(ofSize: 16) : .boldSystemFont(ofSize: 16)
+            
+            UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseOut, animations: {
+                self.menuBarView.layoutIfNeeded()
+                self.menuBarView.tintColor = self.isSelected ? .orange : .gray
+            }, completion: nil)
+        }
+    }
 }

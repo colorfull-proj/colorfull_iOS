@@ -36,6 +36,7 @@
 		9D5F9EDA258279A200742F22 /* Mypost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D5F9ED5258279A200742F22 /* Mypost.storyboard */; };
 		9D5F9EDB258279A200742F22 /* Author.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D5F9ED6258279A200742F22 /* Author.storyboard */; };
 		9D5F9EE0258279B000742F22 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5F9EDF258279B000742F22 /* PostCell.swift */; };
+		9D5F9EFF258289B000742F22 /* PictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5F9EFE258289B000742F22 /* PictureCell.swift */; };
 		9DE91AD62578F6BC0079C7F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE91AD52578F6BC0079C7F4 /* AppDelegate.swift */; };
 		9DE91AD82578F6BC0079C7F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE91AD72578F6BC0079C7F4 /* SceneDelegate.swift */; };
 		9DE91ADD2578F6BC0079C7F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE91ADB2578F6BC0079C7F4 /* Main.storyboard */; };
@@ -98,6 +99,7 @@
 		9D5F9ED5258279A200742F22 /* Mypost.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Mypost.storyboard; path = Colorful/Sources/Scene/Mypage/Storyboard/Mypost.storyboard; sourceTree = SOURCE_ROOT; };
 		9D5F9ED6258279A200742F22 /* Author.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Author.storyboard; path = Colorful/Sources/Scene/Mypage/Storyboard/Author.storyboard; sourceTree = SOURCE_ROOT; };
 		9D5F9EDF258279B000742F22 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostCell.swift; path = Colorful/Sources/Scene/Mypage/CollectionView/PostCell.swift; sourceTree = SOURCE_ROOT; };
+		9D5F9EFE258289B000742F22 /* PictureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCell.swift; sourceTree = "<group>"; };
 		9D61E95A9B7E972464983A11 /* Pods-Colorful-ColorfulUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Colorful-ColorfulUITests.debug.xcconfig"; path = "Target Support Files/Pods-Colorful-ColorfulUITests/Pods-Colorful-ColorfulUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9DE91AD22578F6BC0079C7F4 /* Colorful.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Colorful.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DE91AD52578F6BC0079C7F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -305,6 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				9D5F9EDF258279B000742F22 /* PostCell.swift */,
+				9D5F9EFE258289B000742F22 /* PictureCell.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -314,9 +317,9 @@
 			children = (
 				9D5F9ED3258279A200742F22 /* Mypage.storyboard */,
 				9D5F9ED5258279A200742F22 /* Mypost.storyboard */,
+				9D5F9ED4258279A200742F22 /* Mypicture.storyboard */,
 				9D5F9ED6258279A200742F22 /* Author.storyboard */,
 				9D5F9ED2258279A200742F22 /* Like.storyboard */,
-				9D5F9ED4258279A200742F22 /* Mypicture.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -742,6 +745,7 @@
 				9D5F9ECD2582799900742F22 /* LikeVC.swift in Sources */,
 				9D5F9EC32582798B00742F22 /* AuthorVC.swift in Sources */,
 				9D5F9ECC2582799900742F22 /* MypostVC.swift in Sources */,
+				9D5F9EFF258289B000742F22 /* PictureCell.swift in Sources */,
 				7F7444AE257ABC95004BB2A2 /* MainVC.swift in Sources */,
 				7FD5395925823A840034D9F0 /* AgeVC.swift in Sources */,
 				7F74453925812856004BB2A2 /* HomePostData.swift in Sources */,

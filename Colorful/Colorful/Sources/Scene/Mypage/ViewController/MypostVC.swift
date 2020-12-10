@@ -54,6 +54,7 @@ extension MypostVC: UICollectionViewDataSource {
                                   likeCount: 10,
                                   commentCount: 6))
         postCell.widthConstraint.constant = self.view.bounds.width - 15*2
+        postCell.contentView.layer.cornerRadius = self.view.bounds.width / 25
         postCell.layoutIfNeeded()
         return postCell
     }

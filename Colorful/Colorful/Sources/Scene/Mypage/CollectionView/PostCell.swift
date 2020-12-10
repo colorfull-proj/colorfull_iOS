@@ -33,6 +33,7 @@ class PostCell: UICollectionViewCell {
     // MARK: - Life Cycle
     override func awakeFromNib() {
         super.awakeFromNib()
+        contentView.clipsToBounds = true
     }
     
     override func prepareForReuse() {

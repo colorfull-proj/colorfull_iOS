@@ -79,7 +79,7 @@
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HhC-xX-kVb"/>
-                        <color key="backgroundColor" red="0.066666666666666666" green="0.070588235294117646" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="HhC-xX-kVb" firstAttribute="trailing" secondItem="LHc-ac-Ofr" secondAttribute="trailing" id="255-Xi-fpn"/>
                             <constraint firstItem="LHc-ac-Ofr" firstAttribute="leading" secondItem="HhC-xX-kVb" secondAttribute="leading" id="97J-Ls-ByR"/>

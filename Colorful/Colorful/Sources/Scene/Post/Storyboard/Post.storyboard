@@ -11,7 +11,7 @@
         <!--PostVC-->
         <scene sceneID="LpM-Tz-nKW">
             <objects>
-                <viewController id="TOT-Ys-MeW" customClass="PostVC" customModule="Colorful" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PostVC" id="TOT-Ys-MeW" customClass="PostVC" customModule="Colorful" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dpL-9c-eON">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,6 +62,8 @@
                             <constraint firstAttribute="bottom" secondItem="izl-CB-zju" secondAttribute="bottom" id="kL4-Iw-ccf"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="naviPlusIc" id="aNf-OV-bh6"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="ContentTextView" destination="IuG-Cm-vB8" id="dCR-Gu-jyC"/>
                         <outlet property="anonyLabel" destination="aMq-m0-J07" id="Wg2-ms-UCN"/>
@@ -77,6 +79,7 @@
     <resources>
         <image name="comIc" width="20" height="20"/>
         <image name="line" width="345" height="1.6666666269302368"/>
+        <image name="naviPlusIc" width="34" height="34"/>
         <image name="textBg" width="345" height="726"/>
     </resources>
 </document>

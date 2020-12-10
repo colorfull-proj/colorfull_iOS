@@ -100,6 +100,8 @@
                             <constraint firstItem="760-Ex-kTq" firstAttribute="top" secondItem="hwT-wd-fWZ" secondAttribute="top" id="tN8-32-qQ7"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="naviTextIc" id="hmU-Vh-eIg"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="menuBarCollectionView" destination="760-Ex-kTq" id="v0c-q9-4Gs"/>
                     </connections>
@@ -160,6 +162,7 @@
                     <view key="view" contentMode="scaleToFill" id="ac3-8O-XUU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="707"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="NW5-Ai-OZv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
@@ -169,6 +172,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="naviTextIc" width="25" height="25"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

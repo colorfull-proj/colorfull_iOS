@@ -8,6 +8,11 @@
 import UIKit
 
 class PostVC: UIViewController {
+    static let identifier = "PostVC"
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var ContentTextView: UITextView!

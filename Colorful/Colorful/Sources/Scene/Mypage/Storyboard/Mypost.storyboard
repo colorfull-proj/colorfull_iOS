@@ -109,7 +109,7 @@
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BXi-UW-VfO"/>
-                        <color key="backgroundColor" red="0.074509803921568626" green="0.066666666666666666" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="BXi-UW-VfO" firstAttribute="trailing" secondItem="niU-IW-fhd" secondAttribute="trailing" id="EXt-4l-i6M"/>
                             <constraint firstItem="niU-IW-fhd" firstAttribute="leading" secondItem="BXi-UW-VfO" secondAttribute="leading" id="eiQ-J3-JWf"/>

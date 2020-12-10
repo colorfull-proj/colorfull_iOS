@@ -9,6 +9,7 @@ import UIKit
 
 protocol CategoryVCAble {
     var _view: UIView { get }
+    func calContentHeight() -> CGFloat
 }
 
 enum SelectCategory: Int, CaseIterable {
@@ -68,7 +69,7 @@ class MyPageVC: UIViewController {
     @IBOutlet weak var segmentLeadingConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var containerView: UIView!
-    
+
     private var childVCs: [CategoryVCAble] = []
     
     // MARK: - Data

@@ -8,6 +8,9 @@
 import UIKit
 
 class WritingVC: UIViewController, MenuBarDelegagte {
+    
+    
+    
     func menuBarView(scrollTo index: Int) {
         
     }
@@ -17,10 +20,12 @@ class WritingVC: UIViewController, MenuBarDelegagte {
     var pageCollectionView: UICollectionView = {
         let collectionViewLayout = UICollectionViewFlowLayout()
         collectionViewLayout.scrollDirection = .horizontal
-        let collectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: 100, height: 100), collectionViewLayout: collectionViewLayout)
+        let collectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: 0, height: 0), collectionViewLayout: collectionViewLayout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         return collectionView
     }()
+    
+    
     var customMenuBar = MenuBarView()
     //MARK: Life cycle
     override func viewDidLoad() {
@@ -87,7 +92,7 @@ extension WritingVC: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-        let itemAt = Int(targetContentOffset.pointee.x / self.view.frame.width - 200)
+        let itemAt = Int(self.view.frame.width / 3)
         let indexPath = IndexPath(item: itemAt, section: 3)
         customMenuBar.customTabBarCollectionView.selectItem(at: indexPath, animated: true, scrollPosition: [])
     }

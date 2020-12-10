@@ -12,6 +12,26 @@ class PostVC: UIViewController {
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var ContentTextView: UITextView!
     
+    @IBOutlet weak var checkBtn: UIButton!
+    @IBOutlet weak var anonyLabel: UILabel!
+    
+    
+    var isChecked: Int = 0
+    
+    @IBAction func checkBtnSelected(_ sender: UIButton) {
+        
+        if isChecked == 0 {
+            isChecked = 1
+            checkBtn.setImage(UIImage(named:"anonymityIc"), for: .normal)
+            anonyLabel.textColor = UIColor.orange
+        }
+        else{
+            isChecked = 0
+            checkBtn.setImage(UIImage(named:"comIc"), for: .normal)
+            anonyLabel.textColor = UIColor.gray_label
+        }
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +40,10 @@ class PostVC: UIViewController {
         titleTextField.delegate = self
         textViewSetupView()
         textFieldSetupView()
-        
+    
     }
+    
+
     
     func textViewSetupView() {
         ContentTextView.text == "내용을 입력하세요"
@@ -63,7 +85,7 @@ class PostVC: UIViewController {
         }
         
         func textFieldDidEndEditing(_ textField: UITextField) {
-            if ((titleTextField.text?.isEmpty) != nil) {
+            if ((titleTextField.text?.isEmpty) == nil) {
                 textFieldSetupView()
             }
         }
@@ -93,8 +115,8 @@ class PostVC: UIViewController {
             let duration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as! Double
             let curve = notification.userInfo?[UIResponder.keyboardAnimationCurveUserInfoKey] as! UInt
             UIView.animate(withDuration: duration, delay: 0, options: .init(rawValue: curve), animations: {
-                self.titleTextField!.transform = .init(translationX: 0, y: -300)
-                self.ContentTextView!.transform = .init(translationX: 0, y: -300)
+                self.titleTextField!.transform = .init(translationX: 0, y: -200)
+                self.ContentTextView!.transform = .init(translationX: 0, y: -200)
             })
         }
         

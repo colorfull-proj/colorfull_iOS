@@ -23,13 +23,6 @@
                                 <rect key="frame" x="15" y="136" width="345" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="내용을 입력하세요" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="IuG-Cm-vB8">
-                                <rect key="frame" x="26" y="146" width="322" height="632"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.63137254899999995" green="0.63137254899999995" blue="0.63137254899999995" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="제목" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="lgc-89-PBU">
                                 <rect key="frame" x="27" y="104" width="321" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -37,6 +30,28 @@
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="내용을 입력하세요" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="IuG-Cm-vB8">
+                                <rect key="frame" x="26" y="146" width="322" height="632"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.63137254899999995" green="0.63137254899999995" blue="0.63137254899999995" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="익명" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMq-m0-J07">
+                                <rect key="frame" x="325" y="455" width="26" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.63137254899999995" green="0.63137254899999995" blue="0.63137254899999995" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4C-M0-NWr">
+                                <rect key="frame" x="307" y="458" width="15" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="comIc"/>
+                                <connections>
+                                    <action selector="checkBtnSelected:" destination="TOT-Ys-MeW" eventType="touchUpInside" id="2Vc-9t-96F"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7yF-VK-wj8"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -49,6 +64,8 @@
                     </view>
                     <connections>
                         <outlet property="ContentTextView" destination="IuG-Cm-vB8" id="dCR-Gu-jyC"/>
+                        <outlet property="anonyLabel" destination="aMq-m0-J07" id="Wg2-ms-UCN"/>
+                        <outlet property="checkBtn" destination="M4C-M0-NWr" id="dor-HN-ql4"/>
                         <outlet property="titleTextField" destination="lgc-89-PBU" id="Xc4-af-m9h"/>
                     </connections>
                 </viewController>
@@ -58,6 +75,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="comIc" width="20" height="20"/>
         <image name="line" width="345" height="1.6666666269302368"/>
         <image name="textBg" width="345" height="726"/>
     </resources>

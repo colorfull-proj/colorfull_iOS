@@ -60,9 +60,10 @@
         <!--TabbarVC-->
         <scene sceneID="9Zn-Wi-mmZ">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="eiY-tB-Xyg" customClass="TabbarVC" customModule="Colorful" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabbarVC" automaticallyAdjustsScrollViewInsets="NO" id="eiY-tB-Xyg" customClass="TabbarVC" customModule="Colorful" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="psf-KG-OJd">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -18,6 +18,29 @@ class SigninVC: UIViewController {
     
     @IBOutlet weak var loginBtn: UIButton!
     
+    // MARK: - Action
+    @IBAction func signin(_ sender: Any) {
+        guard let email = emailTextfield.text,
+              let pw = pwTextfield.text else { return }
+        
+        SigninService.shared.requestSignin(SigninParameter(id: email, password: pw)) { result in
+            switch result {
+            case .success(let data):
+                print(data)
+            case .requestErr(let err):
+                print(err)
+            default:
+                print("defaul")
+            }
+        }
+    }
+    
+    @IBAction func signup(_ sender: Any) {
+        guard let sugnupVC = UIStoryboard(name: "Signup", bundle: nil).instantiateViewController(withIdentifier: "SignupVC") as? SignupVC else { return }
+        self.navigationController?.navigationBar.tintColor = .white
+        self.navigationController?.pushViewController(sugnupVC, animated: true)
+    }
+    
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +48,11 @@ class SigninVC: UIViewController {
         emailView.clipsToBounds = true
         pwView.clipsToBounds = true
         loginBtn.clipsToBounds = true
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
     }
     
     override func viewDidLayoutSubviews() {

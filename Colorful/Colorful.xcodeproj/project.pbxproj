@@ -15,7 +15,6 @@
 		7F7444FC257C0B40004BB2A2 /* WritingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7444FB257C0B40004BB2A2 /* WritingVC.swift */; };
 		7F74452225812452004BB2A2 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F74452125812452004BB2A2 /* APIConstants.swift */; };
 		7F74452A25812517004BB2A2 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F74452925812517004BB2A2 /* NetworkResult.swift */; };
-		7F74453425812698004BB2A2 /* HomePostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F74453325812698004BB2A2 /* HomePostService.swift */; };
 		7F74453925812856004BB2A2 /* HomePostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F74453825812856004BB2A2 /* HomePostData.swift */; };
 		7FD538BC2581640F0034D9F0 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD538BA2581640F0034D9F0 /* CustomCell.swift */; };
 		7FD5393625818BFC0034D9F0 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD5393525818BFC0034D9F0 /* UIColor.swift */; };
@@ -94,7 +93,6 @@
 		7F7444FB257C0B40004BB2A2 /* WritingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingVC.swift; sourceTree = "<group>"; };
 		7F74452125812452004BB2A2 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		7F74452925812517004BB2A2 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
-		7F74453325812698004BB2A2 /* HomePostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostService.swift; sourceTree = "<group>"; };
 		7F74453825812856004BB2A2 /* HomePostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostData.swift; sourceTree = "<group>"; };
 		7FD538BA2581640F0034D9F0 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		7FD5393525818BFC0034D9F0 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
@@ -275,8 +273,9 @@
 			isa = PBXGroup;
 			children = (
 				7F74452125812452004BB2A2 /* APIConstants.swift */,
+				9D94A8DE2586A0DC00E333FF /* ResponseData.swift */,
 				7F74452925812517004BB2A2 /* NetworkResult.swift */,
-				7F74453325812698004BB2A2 /* HomePostService.swift */,
+				9D382005258695F600BC3C4F /* API */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -333,7 +332,6 @@
 		9D382005258695F600BC3C4F /* API */ = {
 			isa = PBXGroup;
 			children = (
-				9D94A8DE2586A0DC00E333FF /* ResponseData.swift */,
 				9D3820212586978700BC3C4F /* Signin */,
 				9D94A9002586AA3300E333FF /* Signup */,
 			);
@@ -569,7 +567,6 @@
 				9DE91AD52578F6BC0079C7F4 /* AppDelegate.swift */,
 				9DE91AD72578F6BC0079C7F4 /* SceneDelegate.swift */,
 				9D38200E2586962A00BC3C4F /* Util */,
-				9D382005258695F600BC3C4F /* API */,
 				9DE91B132578F8640079C7F4 /* Scene */,
 			);
 			path = Sources;
@@ -915,7 +912,6 @@
 				9D94A9022586AA4200E333FF /* SignupService.swift in Sources */,
 				7FD5395925823A840034D9F0 /* AgeVC.swift in Sources */,
 				7F74453925812856004BB2A2 /* HomePostData.swift in Sources */,
-				7F74453425812698004BB2A2 /* HomePostService.swift in Sources */,
 				7FD5395425823A690034D9F0 /* AllVC.swift in Sources */,
 				7F74452A25812517004BB2A2 /* NetworkResult.swift in Sources */,
 				9DE91AD82578F6BC0079C7F4 /* SceneDelegate.swift in Sources */,

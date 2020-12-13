@@ -27,6 +27,8 @@ class SigninVC: UIViewController {
             switch result {
             case .success(let data):
                 print(data)
+                guard let tabbar = UIStoryboard(name: "Tabbar", bundle: nil).instantiateViewController(withIdentifier: "TabbarVC") as? UITabBarController else { return }
+                UIApplication.shared.windows.filter({ $0.isKeyWindow }).first?.rootViewController = tabbar
             case .requestErr(let err):
                 print(err)
             default:
@@ -39,6 +41,10 @@ class SigninVC: UIViewController {
         guard let sugnupVC = UIStoryboard(name: "Signup", bundle: nil).instantiateViewController(withIdentifier: "SignupVC") as? SignupVC else { return }
         self.navigationController?.navigationBar.tintColor = .white
         self.navigationController?.pushViewController(sugnupVC, animated: true)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     // MARK: - Life Cycle

@@ -25,6 +25,8 @@
 		7FD5395E25823AA80034D9F0 /* GenderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD5395D25823AA80034D9F0 /* GenderVC.swift */; };
 		7FD5398125824A490034D9F0 /* Post.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FD5398025824A490034D9F0 /* Post.storyboard */; };
 		7FD5398625824A570034D9F0 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD5398525824A570034D9F0 /* PostVC.swift */; };
+		9D3820072586960700BC3C4F /* SigninService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3820062586960700BC3C4F /* SigninService.swift */; };
+		9D3820102586964000BC3C4F /* UserdefaultKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D38200F2586964000BC3C4F /* UserdefaultKey.swift */; };
 		9D5F9EC32582798B00742F22 /* AuthorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5F9EC22582798B00742F22 /* AuthorVC.swift */; };
 		9D5F9ECB2582799900742F22 /* MyPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5F9EC72582799900742F22 /* MyPageVC.swift */; };
 		9D5F9ECC2582799900742F22 /* MypostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5F9EC82582799900742F22 /* MypostVC.swift */; };
@@ -101,6 +103,8 @@
 		7FD5398525824A570034D9F0 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		820518C9F6C61D34F8916663 /* Pods_ColorfulTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColorfulTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95523E7BC736F82813C1E8ED /* Pods_Colorful_ColorfulUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Colorful_ColorfulUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D3820062586960700BC3C4F /* SigninService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninService.swift; sourceTree = "<group>"; };
+		9D38200F2586964000BC3C4F /* UserdefaultKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserdefaultKey.swift; sourceTree = "<group>"; };
 		9D5F9EC22582798B00742F22 /* AuthorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthorVC.swift; path = Colorful/Sources/Scene/Mypage/ViewController/AuthorVC.swift; sourceTree = SOURCE_ROOT; };
 		9D5F9EC72582799900742F22 /* MyPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyPageVC.swift; path = Colorful/Sources/Scene/Mypage/ViewController/MyPageVC.swift; sourceTree = SOURCE_ROOT; };
 		9D5F9EC82582799900742F22 /* MypostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MypostVC.swift; path = Colorful/Sources/Scene/Mypage/ViewController/MypostVC.swift; sourceTree = SOURCE_ROOT; };
@@ -321,6 +325,22 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		9D382005258695F600BC3C4F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				9D3820062586960700BC3C4F /* SigninService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		9D38200E2586962A00BC3C4F /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				9D38200F2586964000BC3C4F /* UserdefaultKey.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		9D5F9EA52582795E00742F22 /* Mypage */ = {
 			isa = PBXGroup;
 			children = (
@@ -500,6 +520,8 @@
 			children = (
 				9DE91AD52578F6BC0079C7F4 /* AppDelegate.swift */,
 				9DE91AD72578F6BC0079C7F4 /* SceneDelegate.swift */,
+				9D38200E2586962A00BC3C4F /* Util */,
+				9D382005258695F600BC3C4F /* API */,
 				9DE91B132578F8640079C7F4 /* Scene */,
 			);
 			path = Sources;
@@ -859,6 +881,7 @@
 				7FD5393625818BFC0034D9F0 /* UIColor.swift in Sources */,
 				7FD538BC2581640F0034D9F0 /* CustomCell.swift in Sources */,
 				9D5F9ECD2582799900742F22 /* LikeVC.swift in Sources */,
+				9D3820072586960700BC3C4F /* SigninService.swift in Sources */,
 				9D5F9EC32582798B00742F22 /* AuthorVC.swift in Sources */,
 				9D5F9ECC2582799900742F22 /* MypostVC.swift in Sources */,
 				9D5F9EFF258289B000742F22 /* PictureCell.swift in Sources */,
@@ -876,6 +899,7 @@
 				7F7444FC257C0B40004BB2A2 /* WritingVC.swift in Sources */,
 				7F7444DA257BF9D3004BB2A2 /* PictureCVC.swift in Sources */,
 				9D5F9F0C25829CAF00742F22 /* LikeCell.swift in Sources */,
+				9D3820102586964000BC3C4F /* UserdefaultKey.swift in Sources */,
 				9D5F9ECE2582799900742F22 /* MypictureVC.swift in Sources */,
 				9D5F9ECB2582799900742F22 /* MyPageVC.swift in Sources */,
 				9D5F9F2B2582A72B00742F22 /* ContentVC.swift in Sources */,

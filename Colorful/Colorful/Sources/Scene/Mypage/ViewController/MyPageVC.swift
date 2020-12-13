@@ -109,9 +109,9 @@ class MyPageVC: UIViewController {
         }
     }
     
-    var mypostCount: Int = 2
+    var mypostCount: Int = 3
     var mypictureCount: Int = 6
-    var likeCount: Int = 0
+    var likeCount: Int = 4
     var authorCount: Int = 4
     
     // MARK: - Init

@@ -26,6 +26,14 @@ class LikeVC: UIViewController {
         }
     }
     
+    // MARK: - Data
+    private var likeDatas: [LikeCellDTO] = [
+        LikeCellDTO(profileImage: nil, nickname: "yeon_blue", introduce: "붕붕"),
+        LikeCellDTO(profileImage: nil, nickname: "junyup", introduce: "시원한 그림"),
+        LikeCellDTO(profileImage: nil, nickname: "annyeong", introduce: "이러한 그림도 어때요?"),
+        LikeCellDTO(profileImage: nil, nickname: "저 하늘을 봐", introduce: "돈이 가장 중요할까요..?")
+    ]
+    
     // MARK: - Init
     private func setDelegate() {
         likeCollectionView.dataSource = self
@@ -40,7 +48,7 @@ class LikeVC: UIViewController {
 
 extension LikeVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return likeDatas.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -48,9 +56,7 @@ extension LikeVC: UICollectionViewDataSource {
                                                                 for: indexPath) as? LikeCell
         else { return UICollectionViewCell() }
         
-        likeCell.bind(LikeCellDTO(profileImage: nil,
-                                  nickname: "돈이 가장 중요할까요?",
-                                  introduce: "somsoming"))
+        likeCell.bind(likeDatas[indexPath.row])
         
         likeCell.contentView.layer.cornerRadius = (self.view.bounds.width-15*2-20)/2/20
         

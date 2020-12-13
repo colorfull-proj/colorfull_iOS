@@ -13,6 +13,8 @@ class MypictureVC: UIViewController {
     // MARK: - UI
     @IBOutlet weak var pictureCollectionView: UICollectionView! {
         didSet {
+            let tabHeight = tabBarController!.tabBar.frame.height
+            pictureCollectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: tabHeight, right: 0)
             if let layout = pictureCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
                 let width = (UIScreen.main.bounds.width - 15*2 - 20)/2
                 let height = width * 1.58

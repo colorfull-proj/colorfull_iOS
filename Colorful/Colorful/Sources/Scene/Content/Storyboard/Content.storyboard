@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w9u-mz-WFX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ape-i9-bhq">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bbw-eb-3hP">
-                                <rect key="frame" x="161" y="64" width="92" height="30"/>
+                                <rect key="frame" x="161" y="108" width="92" height="30"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nXn-xs-yB0">
                                         <rect key="frame" x="0.0" y="0.0" width="41" height="30"/>
@@ -79,7 +79,7 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g7G-9T-OB5">
-                                <rect key="frame" x="167" y="94" width="29" height="3"/>
+                                <rect key="frame" x="167" y="138" width="29" height="3"/>
                                 <color key="backgroundColor" red="0.86274509803921573" green="0.40000000000000002" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
                                 <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                                 <constraints>
@@ -87,7 +87,7 @@
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tIG-vO-KZT">
-                                <rect key="frame" x="0.0" y="132" width="414" height="681"/>
+                                <rect key="frame" x="0.0" y="176" width="414" height="637"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pCB-ZG-zhh">
                                     <size key="itemSize" width="252" height="410"/>
@@ -191,7 +191,7 @@
                             <constraint firstItem="tIG-vO-KZT" firstAttribute="top" secondItem="g7G-9T-OB5" secondAttribute="bottom" constant="35" id="k1B-ZJ-slP"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="naviImageIc" id="7RV-Ml-Y2S"/>
+                    <navigationItem key="navigationItem" id="zMN-Sg-cw8"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="collectionView" destination="tIG-vO-KZT" id="cta-hv-hB9"/>
@@ -209,6 +209,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8OA-Tq-oaa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1142.0289855072465" y="-218.30357142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Dra-Wl-S5X">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ape-i9-bhq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="naviHomeIc" id="8WJ-Vx-Cs7"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CfZ-RQ-U35">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="w9u-mz-WFX" kind="relationship" relationship="rootViewController" id="CKT-Ad-ZIZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C16-0C-pDJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="231.8840579710145" y="-218.30357142857142"/>
         </scene>
     </scenes>
@@ -216,6 +236,6 @@
         <image name="comIc" width="20" height="20"/>
         <image name="homeImg2Img" width="125" height="125"/>
         <image name="likeIc" width="20" height="20"/>
-        <image name="naviImageIc" width="29" height="23"/>
+        <image name="naviHomeIc" width="26.5" height="25"/>
     </resources>
 </document>

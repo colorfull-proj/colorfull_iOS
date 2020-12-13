@@ -87,6 +87,7 @@ class ContentVC: UIViewController {
     
     private func setDelegate() {
         collectionView.dataSource = self
+        collectionView.delegate = self
     }
     
     // MARK: - Life Cycle
@@ -95,6 +96,11 @@ class ContentVC: UIViewController {
         // Do any additional setup after loading the view.
         initView()
         setDelegate()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
     }
 }
 
@@ -114,5 +120,12 @@ extension ContentVC: UICollectionViewDataSource {
         contentCell.bind(contentDTOs[indexPath.row])
         
         return contentCell
+    }
+}
+
+extension ContentVC: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let contentdetailVC = UIStoryboard(name: "ContentDetail", bundle: nil).instantiateViewController(withIdentifier: ContentDetailVC.identifier) as? ContentDetailVC else { return }
+        self.navigationController?.pushViewController(contentdetailVC, animated: true)
     }
 }

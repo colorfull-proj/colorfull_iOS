@@ -7,6 +7,13 @@
 
 import UIKit
 
+struct ContentDTO {
+    let title: String
+    let nickname: String
+    let likeCount: Int
+    let commentCount: Int
+}
+
 class ContentVC: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -47,8 +54,18 @@ class ContentVC: UIViewController {
                     $0.textColor = UIColor(red: 161/255, green: 161/255, blue: 161/255, alpha: 1.0)
 
                 }
+            
+            collectionView.contentOffset = .zero
+            collectionView.reloadData()
         }
     }
+    
+    var contentDTOs: [ContentDTO] = [
+        ContentDTO(title: "안녕하세요", nickname: "somsoming", likeCount: 10, commentCount: 14),
+        ContentDTO(title: "저기요", nickname: "somsss", likeCount: 9, commentCount: 4),
+        ContentDTO(title: "아아아아아아아", nickname: "akstlsss", likeCount: 7, commentCount: 3),
+        ContentDTO(title: "저는 고민이 있어요", nickname: "xmllllll", likeCount: 1, commentCount: 2)
+    ]
     
     // MARK: - Action
     @IBAction func clickedCategory(_ sender: Any) {
@@ -83,11 +100,19 @@ class ContentVC: UIViewController {
 
 extension ContentVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 100
+        return contentDTOs.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let contentCell = collectionView.dequeueReusableCell(withReuseIdentifier: ContentCell.identifier, for: indexPath) as? ContentCell else { return UICollectionViewCell() }
+        
+        if selectedIndex == 0 {
+            contentCell.imageView.image = UIImage(named: "homeImg1Img")
+        } else {
+            contentCell.imageView.image = UIImage(named: "homeImg2Img")
+        }
+        contentCell.bind(contentDTOs[indexPath.row])
+        
         return contentCell
     }
 }

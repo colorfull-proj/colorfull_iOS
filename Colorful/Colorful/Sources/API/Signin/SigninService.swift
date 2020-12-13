@@ -47,7 +47,8 @@ struct SigninService {
     
     private init() { }
     
-    func requestSignin(_ parameters: SigninParameter) {
+    func requestSignin(_ parameters: SigninParameter,
+                       completion: @escaping (NetworkResult<Any>) -> Void) {
         let headers: HTTPHeaders = [
             "Content-Type": "Application/json"
         ]
@@ -60,10 +61,16 @@ struct SigninService {
             .responseDecodable(of: ResponseData<SigninBody>.self) { response in
                 switch response.result {
                 case .success(let data):
-                    print(data)
+                    if data.status == 200 {
+                        guard let token = data.data?.user.uid else { return }
+                        UserDefaults.standard.setValue(token, forKey: UserdefaultKey.token)
+                        completion(.success(true))
+                    } else {
+                        completion(.requestErr("err"))
+                    }
                 case .failure(let err):
                     print(err.localizedDescription)
-                    
+                    completion(.networkFail)
                 }
             }
             

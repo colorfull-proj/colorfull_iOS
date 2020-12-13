@@ -19,7 +19,6 @@
 		7F74453925812856004BB2A2 /* HomePostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F74453825812856004BB2A2 /* HomePostData.swift */; };
 		7FD538BC2581640F0034D9F0 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD538BA2581640F0034D9F0 /* CustomCell.swift */; };
 		7FD5393625818BFC0034D9F0 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD5393525818BFC0034D9F0 /* UIColor.swift */; };
-		7FD5394F2582389B0034D9F0 /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD5394E2582389B0034D9F0 /* PageVC.swift */; };
 		7FD5395425823A690034D9F0 /* AllVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD5395325823A690034D9F0 /* AllVC.swift */; };
 		7FD5395925823A840034D9F0 /* AgeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD5395825823A840034D9F0 /* AgeVC.swift */; };
 		7FD5395E25823AA80034D9F0 /* GenderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD5395D25823AA80034D9F0 /* GenderVC.swift */; };
@@ -98,7 +97,6 @@
 		7F74453825812856004BB2A2 /* HomePostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostData.swift; sourceTree = "<group>"; };
 		7FD538BA2581640F0034D9F0 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		7FD5393525818BFC0034D9F0 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
-		7FD5394E2582389B0034D9F0 /* PageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
 		7FD5395325823A690034D9F0 /* AllVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllVC.swift; sourceTree = "<group>"; };
 		7FD5395825823A840034D9F0 /* AgeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeVC.swift; sourceTree = "<group>"; };
 		7FD5395D25823AA80034D9F0 /* GenderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GenderVC.swift; path = Colorful/Sources/Scene/Writing/Storyboard/GenderVC.swift; sourceTree = SOURCE_ROOT; };
@@ -241,7 +239,6 @@
 				7F7444FB257C0B40004BB2A2 /* WritingVC.swift */,
 				7FD5395D25823AA80034D9F0 /* GenderVC.swift */,
 				7FD5395825823A840034D9F0 /* AgeVC.swift */,
-				7FD5394E2582389B0034D9F0 /* PageVC.swift */,
 				7FD5395325823A690034D9F0 /* AllVC.swift */,
 			);
 			path = ViewController;
@@ -895,7 +892,6 @@
 				9DE91AD62578F6BC0079C7F4 /* AppDelegate.swift in Sources */,
 				7FD5398625824A570034D9F0 /* PostVC.swift in Sources */,
 				9D5F9F3A2582AA4C00742F22 /* TabbarVC.swift in Sources */,
-				7FD5394F2582389B0034D9F0 /* PageVC.swift in Sources */,
 				7FD5393625818BFC0034D9F0 /* UIColor.swift in Sources */,
 				7FD538BC2581640F0034D9F0 /* CustomCell.swift in Sources */,
 				9D5F9ECD2582799900742F22 /* LikeVC.swift in Sources */,

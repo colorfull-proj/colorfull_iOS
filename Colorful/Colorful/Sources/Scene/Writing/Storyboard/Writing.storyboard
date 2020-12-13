@@ -20,9 +20,6 @@
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v5F-IP-JbL">
                                 <rect key="frame" x="0.0" y="105" width="375" height="707"/>
-                                <connections>
-                                    <segue destination="2tU-y1-7Tf" kind="embed" id="gnN-Dq-HDo"/>
-                                </connections>
                             </containerView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="760-Ex-kTq">
                                 <rect key="frame" x="59" y="44" width="257" height="35"/>
@@ -110,80 +107,11 @@
             </objects>
             <point key="canvasLocation" x="200.00000000000003" y="118.52678571428571"/>
         </scene>
-        <!--AllVC-->
-        <scene sceneID="0Wc-Xb-av2">
-            <objects>
-                <viewController storyboardIdentifier="AllVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="y0u-Q1-lsq" customClass="AllVC" customModule="Colorful" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="JDz-ud-tS3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Ri7-vh-iub"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8FW-iY-w5S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="199" y="888"/>
-        </scene>
-        <!--AgeVC-->
-        <scene sceneID="NQM-Zo-eBy">
-            <objects>
-                <viewController storyboardIdentifier="AgeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Vk6-cF-NmI" customClass="AgeVC" customModule="Colorful" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fff-Le-Ghg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="8Ei-AA-8Ng"/>
-                        <color key="backgroundColor" systemColor="systemRedColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xfd-e1-r91" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="978" y="887"/>
-        </scene>
-        <!--GenderVC-->
-        <scene sceneID="WGf-ih-coN">
-            <objects>
-                <viewController storyboardIdentifier="GenderVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aRb-52-UEi" customClass="GenderVC" customModule="Colorful" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ISB-YZ-9rk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="d4k-Ha-eHx"/>
-                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="d6d-Vm-VAt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1730" y="887"/>
-        </scene>
-        <!--PageVC-->
-        <scene sceneID="DTr-Ei-fpp">
-            <objects>
-                <viewController modalTransitionStyle="flipHorizontal" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2tU-y1-7Tf" customClass="PageVC" customModule="Colorful" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ac3-8O-XUU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="707"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="NW5-Ai-OZv"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aHz-iW-SCf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1034" y="119"/>
-        </scene>
     </scenes>
     <resources>
         <image name="naviTextIc" width="25" height="25"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

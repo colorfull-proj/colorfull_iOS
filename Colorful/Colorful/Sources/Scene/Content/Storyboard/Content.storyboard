@@ -215,7 +215,7 @@
         <scene sceneID="Dra-Wl-S5X">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ape-i9-bhq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="naviHomeIc" id="8WJ-Vx-Cs7"/>
+                    <tabBarItem key="tabBarItem" title="" image="naviImageIc" id="8WJ-Vx-Cs7"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="CfZ-RQ-U35">
@@ -236,6 +236,6 @@
         <image name="comIc" width="20" height="20"/>
         <image name="homeImg2Img" width="125" height="125"/>
         <image name="likeIc" width="20" height="20"/>
-        <image name="naviHomeIc" width="26.5" height="25"/>
+        <image name="naviImageIc" width="29" height="23"/>
     </resources>
 </document>

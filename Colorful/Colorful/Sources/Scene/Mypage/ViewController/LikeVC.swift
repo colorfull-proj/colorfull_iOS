@@ -13,6 +13,8 @@ class LikeVC: UIViewController {
     // MARK: - UI
     @IBOutlet weak var likeCollectionView: UICollectionView! {
         didSet {
+            let height = tabBarController!.tabBar.frame.height
+            likeCollectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: height + 16, right: 0)
             if let layout = likeCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
                 let width = (UIScreen.main.bounds.width - 15*2 - 20)/2
                 let height = width * 1.58

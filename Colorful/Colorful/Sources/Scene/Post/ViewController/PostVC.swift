@@ -14,6 +14,9 @@ class PostVC: UIViewController {
         return .lightContent
     }
     
+    @IBOutlet weak var deleteBtn: UIButton!
+    @IBOutlet weak var uploadBtn: UIButton!
+    
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var ContentTextView: UITextView!
     
@@ -22,6 +25,25 @@ class PostVC: UIViewController {
     
     
     var isChecked: Int = 0
+    var leftClicked: Int = 0
+    var rightClicked: Int = 0
+    
+    @IBAction func deleteSelected(_ sender: Any) {
+        
+        dismiss(animated: true, completion: nil)
+        
+    }
+    @IBAction func uploadSelected(_ sender: Any) {
+        
+        uploadBtn.setTitleColor(.orange, for: .normal)
+        uploadBtn.addTarget(self, action: #selector(didTapAdd), for: .touchUpInside)
+        
+    }
+    
+    @objc func didTapAdd(){
+        completeUpload() // 서버 연결 함수 (맨 아래에)
+        
+    }
     
     @IBAction func checkBtnSelected(_ sender: UIButton) {
         
@@ -32,7 +54,7 @@ class PostVC: UIViewController {
         }
         else{
             isChecked = 0
-            checkBtn.setImage(UIImage(named:"comIc"), for: .normal)
+            checkBtn.setImage(UIImage(named:"anonygray"), for: .normal)
             anonyLabel.textColor = UIColor.gray_label
         }
     }
@@ -44,24 +66,23 @@ class PostVC: UIViewController {
         ContentTextView.delegate = self
         titleTextField.delegate = self
         textViewSetupView()
-        textFieldSetupView()
+//        textFieldSetupView()
     
     }
     
-
     
     func textViewSetupView() {
-        ContentTextView.text == "내용을 입력하세요"
+        ContentTextView.text = "내용을 입력하세요"
         ContentTextView.textColor = UIColor.gray_label
         
     }
     
-    func textFieldSetupView(){
-        
-        titleTextField.text == "제목"
-        titleTextField.textColor = UIColor.gray_label
-        
-    }
+//    func textFieldSetupView(){
+//
+//        titleTextField.text = "입력하세요"
+//        titleTextField.textColor = UIColor.gray_label
+//
+//    }
 }
     
     
@@ -81,19 +102,19 @@ class PostVC: UIViewController {
             }
         }
         
-        func textFieldDidBeginEditing(_ textField: UITextField) {
-            
-            if titleTextField.textColor == UIColor.gray_label{
-                titleTextField.text = nil
-                titleTextField.textColor = UIColor.white
-            }
-        }
-        
-        func textFieldDidEndEditing(_ textField: UITextField) {
-            if ((titleTextField.text?.isEmpty) == nil) {
-                textFieldSetupView()
-            }
-        }
+//        func textFieldDidBeginEditing(_ textField: UITextField) {
+//
+//            if titleTextField.textColor == UIColor.gray_label{
+//                titleTextField.text = nil
+//                titleTextField.textColor = UIColor.white
+//            }
+//        }
+//
+//        func textFieldDidEndEditing(_ textField: UITextField) {
+//            if ((titleTextField.text?.isEmpty) == nil) {
+//                textFieldSetupView()
+//            }
+//        }
         
         
         func textView(_ textView: UITextView, shouldChangeTextIn rnage: NSRange, replacementText text: String) -> Bool {
@@ -120,8 +141,8 @@ class PostVC: UIViewController {
             let duration = notification.userInfo?[UIResponder.keyboardAnimationDurationUserInfoKey] as! Double
             let curve = notification.userInfo?[UIResponder.keyboardAnimationCurveUserInfoKey] as! UInt
             UIView.animate(withDuration: duration, delay: 0, options: .init(rawValue: curve), animations: {
-                self.titleTextField!.transform = .init(translationX: 0, y: -200)
-                self.ContentTextView!.transform = .init(translationX: 0, y: -200)
+                self.titleTextField!.transform = .init(translationX: 0, y: -150)
+                self.ContentTextView!.transform = .init(translationX: 0, y: -150)
             })
         }
         
@@ -139,4 +160,13 @@ class PostVC: UIViewController {
         }
         
     }
+
+//MARK: - 서버 연결
+extension PostVC {
+    
+    func completeUpload() {
+        
+    }
+    
+}
 

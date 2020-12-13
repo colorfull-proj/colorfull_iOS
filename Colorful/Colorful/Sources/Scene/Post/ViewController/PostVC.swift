@@ -37,6 +37,7 @@ class PostVC: UIViewController {
         
         uploadBtn.setTitleColor(.orange, for: .normal)
         uploadBtn.addTarget(self, action: #selector(didTapAdd), for: .touchUpInside)
+        dismiss(animated: true, completion: nil)
         
     }
     

@@ -50,12 +50,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eiE-E2-VUy">
-                                <rect key="frame" x="30" y="462.5" width="354" height="38.5"/>
+                                <rect key="frame" x="30" y="462.5" width="354" height="37"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호를 입력해주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i6u-gL-7Uv">
-                                        <rect key="frame" x="10" y="10" width="334" height="18.5"/>
+                                        <rect key="frame" x="10" y="10" width="334" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>

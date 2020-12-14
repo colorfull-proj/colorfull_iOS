@@ -28,10 +28,10 @@ class LikeVC: UIViewController {
     
     // MARK: - Data
     private var likeDatas: [LikeCellDTO] = [
-        LikeCellDTO(profileImage: nil, nickname: "yeon_blue", introduce: "붕붕"),
-        LikeCellDTO(profileImage: nil, nickname: "junyup", introduce: "시원한 그림"),
-        LikeCellDTO(profileImage: nil, nickname: "annyeong", introduce: "이러한 그림도 어때요?"),
-        LikeCellDTO(profileImage: nil, nickname: "저 하늘을 봐", introduce: "돈이 가장 중요할까요..?")
+        LikeCellDTO(profileImage: UIImage(named: "image1"), nickname: "yeon_blue", introduce: "붕붕"),
+        LikeCellDTO(profileImage: UIImage(named: "image2"), nickname: "junyup", introduce: "시원한 그림"),
+        LikeCellDTO(profileImage: UIImage(named: "image3"), nickname: "annyeong", introduce: "이러한 그림도 어때요?"),
+        LikeCellDTO(profileImage: UIImage(named: "image4"), nickname: "저 하늘을 봐", introduce: "돈이 가장 중요할까요..?")
     ]
     
     // MARK: - Init

@@ -26,6 +26,15 @@ class MypictureVC: UIViewController {
         }
     }
     
+    // MARK: - Data
+    private var pictureDatas: [PictureCellDTO] = [
+        PictureCellDTO(backImage: UIImage(named: "image5"), title: "밤이 내려오면..", nickname: "somsoming", like: 4, comment: 2),
+        PictureCellDTO(backImage: UIImage(named: "image6"), title: "황혼", nickname: "somsoming", like: 2, comment: 4),
+        PictureCellDTO(backImage: UIImage(named: "image7"), title: "푸르른 바다를 봐요", nickname: "somsoming", like: 0, comment: 0),
+        PictureCellDTO(backImage: UIImage(named: "image8"), title: "돈이 가장 중요할까요?", nickname: "somsoming", like: 2, comment: 2),
+        PictureCellDTO(backImage: UIImage(named: "image9"), title: "여러가지 가치가 있어요..", nickname: "somsoming", like: 1, comment: 0)
+    ]
+    
     // MARK: - Init
     private func setDelegate() {
         pictureCollectionView.dataSource = self
@@ -41,17 +50,13 @@ class MypictureVC: UIViewController {
 
 extension MypictureVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return pictureDatas.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let pictureCell = collectionView.dequeueReusableCell(withReuseIdentifier: PictureCell.identifier, for: indexPath) as? PictureCell else { return UICollectionViewCell() }
         
-        pictureCell.bind(PictureCellDTO(backImage: nil,
-                                        title: "돈이 가장 중요할까요?",
-                                        nickname: "somsoming",
-                                        like: 10,
-                                        comment: 10))
+        pictureCell.bind(pictureDatas[indexPath.row])
         
         pictureCell.contentView.layer.cornerRadius = (self.view.bounds.width - 20 - 15*2)/2/20
         

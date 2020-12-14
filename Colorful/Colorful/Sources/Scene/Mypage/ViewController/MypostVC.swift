@@ -37,6 +37,7 @@ class MypostVC: UIViewController {
     
     private func setDelegate() {
         postCollectionView.dataSource = self
+        postCollectionView.delegate = self
     }
     
     // MARK: - Life Cycle
@@ -57,7 +58,6 @@ extension MypostVC: UICollectionViewDataSource {
         guard let postCell = collectionView.dequeueReusableCell(withReuseIdentifier: PostCell.identifier,
                                                                 for: indexPath) as? PostCell else { return UICollectionViewCell() }
         
-        
         postCell.bind(postDatas[indexPath.row])
         postCell.widthConstraint.constant = self.view.bounds.width - 15*2
         postCell.contentView.layer.cornerRadius = self.view.bounds.width / 25
@@ -67,6 +67,11 @@ extension MypostVC: UICollectionViewDataSource {
 }
 
 extension MypostVC: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let detailVC = UIStoryboard(name: "ContentDetail", bundle: nil).instantiateViewController(withIdentifier: ContentDetailVC.identifier)
+                as? ContentDetailVC else { return }
+        self.parent?.navigationController?.pushViewController(detailVC, animated: true)
+    }
 }
 
 extension MypostVC: CategoryVCAble {

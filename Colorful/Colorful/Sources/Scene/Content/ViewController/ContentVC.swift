@@ -144,7 +144,7 @@ extension ContentVC: UICollectionViewDataSource {
 
 extension ContentVC: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let contentdetailVC = UIStoryboard(name: "ContentDetail", bundle: nil).instantiateViewController(withIdentifier: ContentDetailVC.identifier) as? ContentDetailVC else { return }
-        self.navigationController?.pushViewController(contentdetailVC, animated: true)
+//        guard let contentdetailVC = UIStoryboard(name: "ContentDetail", bundle: nil).instantiateViewController(withIdentifier: ContentDetailVC.identifier) as? ContentDetailVC else { return }
+//        self.navigationController?.pushViewController(contentdetailVC, animated: true)
     }
 }

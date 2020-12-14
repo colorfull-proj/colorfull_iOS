@@ -159,6 +159,12 @@ class MyPageVC: UIViewController {
         }
     }
     
+    @objc
+    func post(_ notification: NSNotification) {
+        mypostCount += 1
+        mypostCountLabel.text = "\(mypostCount)"
+    }
+    
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -166,6 +172,8 @@ class MyPageVC: UIViewController {
         
         initView()
         initChildVCs()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(post(_:)), name: .post, object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {

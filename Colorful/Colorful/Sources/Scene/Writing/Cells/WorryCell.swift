@@ -21,21 +21,15 @@ class WorryCell: UITableViewCell {
     @IBOutlet weak var qaCount: UILabel!
     @IBOutlet weak var nickname: UILabel!
     
+    func bind(_ worry: WorryDTO) {
+        titleLabel.text = worry.title
+        contentLabel.text = worry.content
+        heartCount.text = "\(worry.heart)"
+        qaCount.text = "\(worry.qa)"
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
-    func setWorryInformation(title: String, content: String, heart: Int, qa: Int){
-        titleLabel.text = title
-        contentLabel.text = content
-//MARK: - 인트형은 어떻게 하는지 모르겠음...ㅎ
-    }
-
 }

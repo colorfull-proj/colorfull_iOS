@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0943E2C4587BACD8C6F66692 /* Pods_ColorfulTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 820518C9F6C61D34F8916663 /* Pods_ColorfulTests.framework */; };
+		7F1ABC9E2586CB35007C0B84 /* All.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F1ABC9D2586CB35007C0B84 /* All.storyboard */; };
+		7F1ABCA92586DE04007C0B84 /* WorryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1ABCA82586DE04007C0B84 /* WorryCell.swift */; };
+		7F1ABCAE2586DF33007C0B84 /* Worry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1ABCAD2586DF33007C0B84 /* Worry.swift */; };
 		7F7444AE257ABC95004BB2A2 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7444AD257ABC95004BB2A2 /* MainVC.swift */; };
 		7F7444D5257BF9C1004BB2A2 /* WritingCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7444D4257BF9C1004BB2A2 /* WritingCVC.swift */; };
 		7F7444DA257BF9D3004BB2A2 /* PictureCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7444D9257BF9D3004BB2A2 /* PictureCVC.swift */; };
@@ -16,11 +19,7 @@
 		7F74452225812452004BB2A2 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F74452125812452004BB2A2 /* APIConstants.swift */; };
 		7F74452A25812517004BB2A2 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F74452925812517004BB2A2 /* NetworkResult.swift */; };
 		7F74453925812856004BB2A2 /* HomePostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F74453825812856004BB2A2 /* HomePostData.swift */; };
-		7FD538BC2581640F0034D9F0 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD538BA2581640F0034D9F0 /* CustomCell.swift */; };
 		7FD5393625818BFC0034D9F0 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD5393525818BFC0034D9F0 /* UIColor.swift */; };
-		7FD5395425823A690034D9F0 /* AllVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD5395325823A690034D9F0 /* AllVC.swift */; };
-		7FD5395925823A840034D9F0 /* AgeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD5395825823A840034D9F0 /* AgeVC.swift */; };
-		7FD5395E25823AA80034D9F0 /* GenderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD5395D25823AA80034D9F0 /* GenderVC.swift */; };
 		7FD5398125824A490034D9F0 /* Post.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FD5398025824A490034D9F0 /* Post.storyboard */; };
 		7FD5398625824A570034D9F0 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD5398525824A570034D9F0 /* PostVC.swift */; };
 		9D3820072586960700BC3C4F /* SigninService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3820062586960700BC3C4F /* SigninService.swift */; };
@@ -86,6 +85,9 @@
 		0962F63CB137ED2AA7DF808B /* Pods-Colorful.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Colorful.release.xcconfig"; path = "Target Support Files/Pods-Colorful/Pods-Colorful.release.xcconfig"; sourceTree = "<group>"; };
 		1532B31DD479B1E00A531633 /* Pods-Colorful.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Colorful.debug.xcconfig"; path = "Target Support Files/Pods-Colorful/Pods-Colorful.debug.xcconfig"; sourceTree = "<group>"; };
 		73B272007F05D401F90740CD /* Pods-Colorful-ColorfulUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Colorful-ColorfulUITests.release.xcconfig"; path = "Target Support Files/Pods-Colorful-ColorfulUITests/Pods-Colorful-ColorfulUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7F1ABC9D2586CB35007C0B84 /* All.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = All.storyboard; sourceTree = "<group>"; };
+		7F1ABCA82586DE04007C0B84 /* WorryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorryCell.swift; sourceTree = "<group>"; };
+		7F1ABCAD2586DF33007C0B84 /* Worry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Worry.swift; path = Colorful/Sources/Scene/Writing/Cells/Worry.swift; sourceTree = SOURCE_ROOT; };
 		7F7444AD257ABC95004BB2A2 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		7F7444D4257BF9C1004BB2A2 /* WritingCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingCVC.swift; sourceTree = "<group>"; };
 		7F7444D9257BF9D3004BB2A2 /* PictureCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCVC.swift; sourceTree = "<group>"; };
@@ -94,11 +96,7 @@
 		7F74452125812452004BB2A2 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		7F74452925812517004BB2A2 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		7F74453825812856004BB2A2 /* HomePostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostData.swift; sourceTree = "<group>"; };
-		7FD538BA2581640F0034D9F0 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		7FD5393525818BFC0034D9F0 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
-		7FD5395325823A690034D9F0 /* AllVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllVC.swift; sourceTree = "<group>"; };
-		7FD5395825823A840034D9F0 /* AgeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeVC.swift; sourceTree = "<group>"; };
-		7FD5395D25823AA80034D9F0 /* GenderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GenderVC.swift; path = Colorful/Sources/Scene/Writing/Storyboard/GenderVC.swift; sourceTree = SOURCE_ROOT; };
 		7FD5398025824A490034D9F0 /* Post.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Post.storyboard; sourceTree = "<group>"; };
 		7FD5398525824A570034D9F0 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		820518C9F6C61D34F8916663 /* Pods_ColorfulTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColorfulTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -221,6 +219,7 @@
 		7F7444E7257C0A38004BB2A2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7F1ABCAD2586DF33007C0B84 /* Worry.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -228,7 +227,7 @@
 		7F7444E8257C0A41004BB2A2 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				7FD538BA2581640F0034D9F0 /* CustomCell.swift */,
+				7F1ABCA82586DE04007C0B84 /* WorryCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -237,9 +236,6 @@
 			isa = PBXGroup;
 			children = (
 				7F7444FB257C0B40004BB2A2 /* WritingVC.swift */,
-				7FD5395D25823AA80034D9F0 /* GenderVC.swift */,
-				7FD5395825823A840034D9F0 /* AgeVC.swift */,
-				7FD5395325823A690034D9F0 /* AllVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -248,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				7F7444EB257C0AE6004BB2A2 /* Writing.storyboard */,
+				7F1ABC9D2586CB35007C0B84 /* All.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -769,6 +766,7 @@
 				9DE91ADD2578F6BC0079C7F4 /* Main.storyboard in Resources */,
 				9D84F48C25866EA900BCE51D /* ContentDetail.storyboard in Resources */,
 				9DB0EE5E25869B040078390B /* Signup.storyboard in Resources */,
+				7F1ABC9E2586CB35007C0B84 /* All.storyboard in Resources */,
 				9D5F9ED9258279A200742F22 /* Mypicture.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -901,7 +899,6 @@
 				7FD5398625824A570034D9F0 /* PostVC.swift in Sources */,
 				9D5F9F3A2582AA4C00742F22 /* TabbarVC.swift in Sources */,
 				7FD5393625818BFC0034D9F0 /* UIColor.swift in Sources */,
-				7FD538BC2581640F0034D9F0 /* CustomCell.swift in Sources */,
 				9D5F9ECD2582799900742F22 /* LikeVC.swift in Sources */,
 				9D3820072586960700BC3C4F /* SigninService.swift in Sources */,
 				9D5F9EC32582798B00742F22 /* AuthorVC.swift in Sources */,
@@ -909,14 +906,14 @@
 				9D5F9EFF258289B000742F22 /* PictureCell.swift in Sources */,
 				9D6099E125868D7D00BB56BA /* SigninVC.swift in Sources */,
 				7F7444AE257ABC95004BB2A2 /* MainVC.swift in Sources */,
+				7F1ABCAE2586DF33007C0B84 /* Worry.swift in Sources */,
 				9D94A9022586AA4200E333FF /* SignupService.swift in Sources */,
-				7FD5395925823A840034D9F0 /* AgeVC.swift in Sources */,
 				7F74453925812856004BB2A2 /* HomePostData.swift in Sources */,
-				7FD5395425823A690034D9F0 /* AllVC.swift in Sources */,
 				7F74452A25812517004BB2A2 /* NetworkResult.swift in Sources */,
 				9DE91AD82578F6BC0079C7F4 /* SceneDelegate.swift in Sources */,
 				9DB0EE6625869B330078390B /* SignupVC.swift in Sources */,
 				9D84F4962586756E00BCE51D /* ComentCell.swift in Sources */,
+				7F1ABCA92586DE04007C0B84 /* WorryCell.swift in Sources */,
 				9D5F9F072582993A00742F22 /* AuthorCell.swift in Sources */,
 				7F74452225812452004BB2A2 /* APIConstants.swift in Sources */,
 				7F7444FC257C0B40004BB2A2 /* WritingVC.swift in Sources */,
@@ -930,7 +927,6 @@
 				9D5F9F492582BABF00742F22 /* CarouselLayout.swift in Sources */,
 				9D84F49125866F4100BCE51D /* ContentDetailVC.swift in Sources */,
 				9D5F9F4E2582C06F00742F22 /* ContentCell.swift in Sources */,
-				7FD5395E25823AA80034D9F0 /* GenderVC.swift in Sources */,
 				9D5F9EE0258279B000742F22 /* PostCell.swift in Sources */,
 				9D94A8DF2586A0DC00E333FF /* ResponseData.swift in Sources */,
 			);

@@ -109,9 +109,9 @@ class MyPageVC: UIViewController {
         }
     }
     
-    var mypostCount: Int = 2
+    var mypostCount: Int = 3
     var mypictureCount: Int = 6
-    var likeCount: Int = 0
+    var likeCount: Int = 4
     var authorCount: Int = 4
     
     // MARK: - Init
@@ -159,6 +159,12 @@ class MyPageVC: UIViewController {
         }
     }
     
+    @objc
+    func post(_ notification: NSNotification) {
+        mypostCount += 1
+        mypostCountLabel.text = "\(mypostCount)"
+    }
+    
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -166,6 +172,13 @@ class MyPageVC: UIViewController {
         
         initView()
         initChildVCs()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(post(_:)), name: .post, object: nil)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
     }
     
 }

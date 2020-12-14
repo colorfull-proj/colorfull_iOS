@@ -36,7 +36,7 @@ class ComentCell: UICollectionViewCell {
     // MARK: - Life Cycle
     override func awakeFromNib() {
         super.awakeFromNib()
-        print("Hi")
+        imageView.contentMode = .scaleAspectFit
         widthConstraint.constant = UIScreen.main.bounds.width - 15*2 - 15*2
     }
     

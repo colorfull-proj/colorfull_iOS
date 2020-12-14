@@ -25,6 +25,14 @@ class AuthorVC: UIViewController {
         authorCollectionView.dataSource = self
     }
     
+    // MARK: - Data
+    private var authorDatas: [AuthorCellDTO] = [
+        AuthorCellDTO(profileImage: nil, nickname: "hongjunyup", introduce: "저는 새로운 것에 도전하는 것을 좋아해요 🤛"),
+        AuthorCellDTO(profileImage: nil, nickname: "dongmin_ee", introduce: "새로운 감성을 찾아 돌아다녀요 🤗"),
+        AuthorCellDTO(profileImage: nil, nickname: "yeonblue", introduce: "늘 내일을 걱정하고 오늘을 열심히 살아요 ☺️"),
+        AuthorCellDTO(profileImage: nil, nickname: "anwwo", introduce: "타인의 감정에 잘 공감해요~ 🙏")
+    ]
+    
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,15 +43,13 @@ class AuthorVC: UIViewController {
 
 extension AuthorVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return authorDatas.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let authorCell = collectionView.dequeueReusableCell(withReuseIdentifier: AuthorCell.identifier, for: indexPath) as? AuthorCell else { return UICollectionViewCell() }
         
-        authorCell.bind(AuthorCellDTO(profileImage: nil,
-                                      nickname: "somsoming",
-                                      introduce: "외로운 걸 즐기는 낭만주의자"))
+        authorCell.bind(authorDatas[indexPath.row])
         
         authorCell.contentView.layer.cornerRadius = (self.view.bounds.width - 20*2)/23
         

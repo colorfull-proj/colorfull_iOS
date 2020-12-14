@@ -24,5 +24,10 @@ class WritingCVC: UICollectionViewCell {
     @IBOutlet weak var commentImg: UIImageView!
     @IBOutlet weak var commentCountLabel: UILabel!
     
-    
+    func bind(_ dto: WorryDTO) {
+        titleLabel.text = dto.title
+        contentLabel.text = dto.content
+        heartCountLabel.text = "\(dto.heart)"
+        commentCountLabel.text = "\(dto.qa)"
+    }
 }

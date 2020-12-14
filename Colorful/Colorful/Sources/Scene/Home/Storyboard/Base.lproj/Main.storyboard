@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oeq-aU-zk8">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainImg" translatesAutoresizingMaskIntoConstraints="NO" id="cge-fG-oGT">
-                                <rect key="frame" x="197" y="89" width="163" height="205"/>
+                                <rect key="frame" x="197" y="133" width="163" height="205"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Colorfull" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYl-hF-are">
-                                <rect key="frame" x="25" y="123" width="140" height="43"/>
+                                <rect key="frame" x="25" y="167" width="140" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="mFJ-Q1-ys5"/>
                                 </constraints>
@@ -30,7 +30,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jzf-OE-Gmk">
-                                <rect key="frame" x="15" y="356" width="345" height="171.66666666666666"/>
+                                <rect key="frame" x="15" y="400" width="345" height="161.33333333333337"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fH1-nP-SZr">
                                     <size key="itemSize" width="345" height="171"/>
@@ -40,7 +40,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="WritingCVC" reuseIdentifier="WritingCVC" id="exM-TH-Rdi" customClass="WritingCVC" customModule="Colorful" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.33333333333333331" width="345" height="171"/>
+                                        <rect key="frame" x="0.0" y="-4.666666666666667" width="345" height="171"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="X4z-li-brX">
                                             <rect key="frame" x="0.0" y="0.0" width="345" height="171"/>
@@ -56,7 +56,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIZ-w4-d5s">
-                                                    <rect key="frame" x="15" y="53.333333333333343" width="213" height="43"/>
+                                                    <rect key="frame" x="15" y="53.333333333333343" width="315" height="43"/>
                                                     <string key="text">이 중에 부자가 되기 위해
 다른 걸 포기하는 길을 선택한 분이 계신가요?
 그렇다면 왜 부자가 되기를 선택했나요?</string>
@@ -94,6 +94,7 @@
                                                 <constraint firstItem="1sL-Hn-IPm" firstAttribute="leading" secondItem="cYA-GW-VN9" secondAttribute="trailing" constant="3" id="1cR-QN-mrj"/>
                                                 <constraint firstAttribute="trailing" secondItem="YRz-UB-Ev3" secondAttribute="trailing" constant="15.67" id="4pa-Uj-afI"/>
                                                 <constraint firstAttribute="bottom" secondItem="fMz-ZX-7Cx" secondAttribute="bottom" id="6YI-g5-xn0"/>
+                                                <constraint firstAttribute="trailing" secondItem="NIZ-w4-d5s" secondAttribute="trailing" constant="15" id="758-k8-C3J"/>
                                                 <constraint firstAttribute="bottom" secondItem="YRz-UB-Ev3" secondAttribute="bottom" constant="14" id="CN1-Ix-hwx"/>
                                                 <constraint firstItem="cYA-GW-VN9" firstAttribute="leading" secondItem="eVd-fH-y3V" secondAttribute="trailing" constant="4" id="GLs-Va-mH7"/>
                                                 <constraint firstItem="fMz-ZX-7Cx" firstAttribute="leading" secondItem="X4z-li-brX" secondAttribute="leading" id="Gr5-I5-Sbr"/>
@@ -126,13 +127,13 @@
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="인기글" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLd-jv-BxP">
-                                <rect key="frame" x="15" y="325" width="47" height="21"/>
+                                <rect key="frame" x="15" y="369" width="47" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="인기 그림" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZq-1y-KM7">
-                                <rect key="frame" x="15" y="531.66666666666663" width="66.666666666666671" height="27"/>
+                                <rect key="frame" x="15" y="565.33333333333337" width="66.666666666666671" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="27" id="4uQ-qN-phi"/>
                                 </constraints>
@@ -141,7 +142,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lAY-Df-sOc">
-                                <rect key="frame" x="0.0" y="568.66666666666663" width="375" height="116.66666666666663"/>
+                                <rect key="frame" x="0.0" y="602.33333333333337" width="375" height="109.33333333333337"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eB2-CN-dp0">
                                     <size key="itemSize" width="143" height="125"/>
@@ -151,7 +152,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="PictureCVC" reuseIdentifier="PictureCVC" id="hTb-oe-dE1" customClass="PictureCVC" customModule="Colorful" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="-4.333333333333333" width="141" height="125"/>
+                                        <rect key="frame" x="0.0" y="-7.666666666666667" width="141" height="125"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rgx-Dm-Opm">
                                             <rect key="frame" x="0.0" y="0.0" width="141" height="125"/>
@@ -178,13 +179,13 @@
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="마음의 방을" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAa-s5-Jds">
-                                <rect key="frame" x="25" y="211" width="92" height="24"/>
+                                <rect key="frame" x="25" y="255" width="92" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가득 채워줄게요" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNi-hS-BTt">
-                                <rect key="frame" x="25" y="241" width="126" height="24"/>
+                                <rect key="frame" x="25" y="285" width="126" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -221,7 +222,7 @@
                             <constraint firstItem="cge-fG-oGT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="unc-yK-6PH"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="naviHomeIc" id="6uY-oj-JAp"/>
+                    <navigationItem key="navigationItem" id="ZIe-E3-t5o"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="pictureCollectionView" destination="lAY-Df-sOc" id="osH-Xf-9k6"/>
@@ -229,6 +230,26 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1063.2" y="41.379310344827587"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ugl-7q-uAK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oeq-aU-zk8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="naviHomeIc" id="NkB-73-fKX"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="df3-tw-CWQ">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6Wy-vH-Adp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZJe-T0-hlO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="120.8" y="41.379310344827587"/>
         </scene>

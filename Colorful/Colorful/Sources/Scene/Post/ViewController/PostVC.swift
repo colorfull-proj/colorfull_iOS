@@ -7,6 +7,10 @@
 
 import UIKit
 
+extension Notification.Name {
+    static let post = Notification.Name(rawValue: "post")
+}
+
 class PostVC: UIViewController {
     static let identifier = "PostVC"
     
@@ -36,15 +40,12 @@ class PostVC: UIViewController {
     @IBAction func uploadSelected(_ sender: Any) {
         
         uploadBtn.setTitleColor(.orange, for: .normal)
-        uploadBtn.addTarget(self, action: #selector(didTapAdd), for: .touchUpInside)
+        NotificationCenter.default.post(name: .post, object: nil, userInfo: ["title": titleTextField.text!, "content": ContentTextView.text!])
+        
         dismiss(animated: true, completion: nil)
         
     }
     
-    @objc func didTapAdd(){
-        completeUpload() // 서버 연결 함수 (맨 아래에)
-        
-    }
     
     @IBAction func checkBtnSelected(_ sender: UIButton) {
         

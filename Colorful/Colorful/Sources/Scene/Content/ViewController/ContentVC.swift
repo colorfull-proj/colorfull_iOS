@@ -8,6 +8,7 @@
 import UIKit
 
 struct ContentDTO {
+    let image: UIImage?
     let title: String
     let nickname: String
     let likeCount: Int
@@ -60,11 +61,26 @@ class ContentVC: UIViewController {
         }
     }
     
-    var contentDTOs: [ContentDTO] = [
-        ContentDTO(title: "안녕하세요", nickname: "somsoming", likeCount: 10, commentCount: 14),
-        ContentDTO(title: "저기요", nickname: "somsss", likeCount: 9, commentCount: 4),
-        ContentDTO(title: "아아아아아아아", nickname: "akstlsss", likeCount: 7, commentCount: 3),
-        ContentDTO(title: "저는 고민이 있어요", nickname: "xmllllll", likeCount: 1, commentCount: 2)
+    var recentDTOs: [ContentDTO] = [
+        ContentDTO(image: UIImage(named: "image1"), title: "하늘을 봐요..", nickname: "somsomming", likeCount: 4, commentCount: 1),
+        ContentDTO(image: UIImage(named: "image2"), title: "저 푸르른 들판", nickname: "junyup", likeCount: 4, commentCount: 0),
+        ContentDTO(image: UIImage(named: "image3"), title: "다르게 쳐다봐요", nickname: "yeonblue", likeCount: 3, commentCount: 0),
+        ContentDTO(image: UIImage(named: "image4"), title: "이게 최선은아니에요", nickname: "dongmin_eee", likeCount: 5, commentCount: 1),
+        ContentDTO(image: UIImage(named: "image5"), title: "황혼", nickname: "aa_ww", likeCount: 1, commentCount: 0),
+        ContentDTO(image: UIImage(named: "image9"), title: "이런 방법도 있어요", nickname: "hyun_xx", likeCount: 3, commentCount: 1),
+        ContentDTO(image: UIImage(named: "image8"), title: "돈이 가장 중요할까요?", nickname: "hye_xx", likeCount: 1, commentCount: 0),
+        ContentDTO(image: UIImage(named: "image7"), title: "이것도 좋아요", nickname: "aa_qq", likeCount: 2, commentCount: 0)
+    ]
+    
+    var popularDTOs: [ContentDTO] = [
+        ContentDTO(image: UIImage(named: "image4"), title: "이게 최선은아니에요", nickname: "dongmin_eee", likeCount: 5, commentCount: 1),
+        ContentDTO(image: UIImage(named: "image3"), title: "다르게 쳐다봐요", nickname: "yeonblue", likeCount: 3, commentCount: 0),
+        ContentDTO(image: UIImage(named: "image1"), title: "하늘을 봐요..", nickname: "somsomming", likeCount: 4, commentCount: 1),
+        ContentDTO(image: UIImage(named: "image5"), title: "황혼", nickname: "aa_ww", likeCount: 1, commentCount: 0),
+        ContentDTO(image: UIImage(named: "image8"), title: "돈이 가장 중요할까요?", nickname: "hye_xx", likeCount: 1, commentCount: 0),
+        ContentDTO(image: UIImage(named: "image7"), title: "이것도 좋아요", nickname: "aa_qq", likeCount: 2, commentCount: 0),
+        ContentDTO(image: UIImage(named: "image2"), title: "저 푸르른 들판", nickname: "junyup", likeCount: 4, commentCount: 0),
+        ContentDTO(image: UIImage(named: "image9"), title: "이런 방법도 있어요", nickname: "hyun_xx", likeCount: 3, commentCount: 1),
     ]
     
     // MARK: - Action
@@ -106,18 +122,21 @@ class ContentVC: UIViewController {
 
 extension ContentVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return contentDTOs.count
+        if selectedIndex == 0 {
+            return recentDTOs.count
+        } else {
+            return popularDTOs.count
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let contentCell = collectionView.dequeueReusableCell(withReuseIdentifier: ContentCell.identifier, for: indexPath) as? ContentCell else { return UICollectionViewCell() }
         
         if selectedIndex == 0 {
-            contentCell.imageView.image = UIImage(named: "homeImg1Img")
+            contentCell.bind(recentDTOs[indexPath.row])
         } else {
-            contentCell.imageView.image = UIImage(named: "homeImg2Img")
+            contentCell.bind(popularDTOs[indexPath.row])
         }
-        contentCell.bind(contentDTOs[indexPath.row])
         
         return contentCell
     }
@@ -125,7 +144,7 @@ extension ContentVC: UICollectionViewDataSource {
 
 extension ContentVC: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let contentdetailVC = UIStoryboard(name: "ContentDetail", bundle: nil).instantiateViewController(withIdentifier: ContentDetailVC.identifier) as? ContentDetailVC else { return }
-        self.navigationController?.pushViewController(contentdetailVC, animated: true)
+//        guard let contentdetailVC = UIStoryboard(name: "ContentDetail", bundle: nil).instantiateViewController(withIdentifier: ContentDetailVC.identifier) as? ContentDetailVC else { return }
+//        self.navigationController?.pushViewController(contentdetailVC, animated: true)
     }
 }

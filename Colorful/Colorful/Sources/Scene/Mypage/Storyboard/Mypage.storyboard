@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZGb-4o-A35">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sqW-tx-fla">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -288,7 +288,7 @@
                             <constraint firstAttribute="bottom" secondItem="fy6-nF-jzI" secondAttribute="bottom" id="O1d-jL-Sjh"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="naviMypageIc" id="uNn-0f-gWz"/>
+                    <navigationItem key="navigationItem" id="0Eb-8y-X8D"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="authorCountLabel" destination="DCs-VD-PlP" id="szQ-Ar-Ldg"/>
@@ -316,7 +316,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qNv-KS-uLx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-175.36231884057972" y="104.46428571428571"/>
+            <point key="canvasLocation" x="765.60000000000002" y="104.1871921182266"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZHP-T1-hW7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sqW-tx-fla" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="naviMypageIc" id="jmj-yT-wK4"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QGv-qW-bNf">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZGb-4o-A35" kind="relationship" relationship="rootViewController" id="8Lf-Ja-6nL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hpj-Qs-rUm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-176.80000000000001" y="104.1871921182266"/>
         </scene>
     </scenes>
     <resources>

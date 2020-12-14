@@ -27,6 +27,7 @@ class PictureCell: UICollectionViewCell {
     
     // MARK: - Init
     func bind(_ dto: PictureCellDTO) {
+        backImageView.image = dto.backImage
         titleLabel.text = dto.title
         nicknameLabel.text = "by " + dto.nickname
         likeLabel.text = "\(dto.like)"

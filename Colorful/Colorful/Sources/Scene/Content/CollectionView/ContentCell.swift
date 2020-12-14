@@ -19,6 +19,7 @@ class ContentCell: UICollectionViewCell {
     
     // MARK: - Init
     func bind(_ dto: ContentDTO) {
+        imageView.image = dto.image
         titleLabel.text = dto.title
         nicknameLabel.text = "by " + dto.nickname
         likeLabel.text = "\(dto.likeCount)"

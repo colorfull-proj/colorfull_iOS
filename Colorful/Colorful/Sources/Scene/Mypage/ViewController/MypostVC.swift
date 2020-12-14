@@ -25,10 +25,10 @@ class MypostVC: UIViewController {
     }
     
     // MARK: - Data
-    private var postDatas: [PostCellDTO] = [
-        PostCellDTO(title: "저는 요즘 고민이 많아요... 취업 걱정 부터 여러가지로 잠이 잘 오질 않아요 저의 이런 복잡한 마음을 누가 이해해줄 수 있을까요?", likeCount: 10, commentCount: 2),
-        PostCellDTO(title: "어제는 여자친구랑 싸웠어요... 제 생각에는 열심히 이해해주려 했는데 잘안됐나봐요", likeCount: 2, commentCount: 3),
-        PostCellDTO(title: "요즘 잠이 잘 오질 않아요.. 왜 그럴까요? 코로나로 우울한 것 같기도하고 잘 모르겠어요..", likeCount: 4, commentCount: 1)
+    private var postDatas: [WorryDTO] = [
+        WorryDTO(title: "저는 요즘 고민이 많아요...", content: "저는 요즘 고민이 많아요... 취업 걱정 부터 여러가지로 잠이 잘 오질 않아요 저의 이런 복잡한 마음을 누가 이해해줄 수 있을까요?", heart: 10, qa: 2),
+        WorryDTO(title: "어제는 여자친구랑 싸웠어요..", content: "어제는 여자친구랑 싸웠어요... 제 생각에는 열심히 이해해주려 했는데 잘안됐나봐요", heart: 2, qa: 3),
+        WorryDTO(title: "요즘 잠이 잘 오질 않아요..", content: "요즘 잠이 잘 오질 않아요.. 왜 그럴까요? 코로나로 우울한 것 같기도하고 잘 모르겠어요..", heart: 5, qa: 7)
     ]
     
     // MARK: - Init
@@ -56,7 +56,7 @@ class MypostVC: UIViewController {
         let content = notification.userInfo?["content"] as? String
         
         print(title)
-        let newData = PostCellDTO(title: content!, likeCount: 0, commentCount: 0)
+        let newData = WorryDTO(title: title!, content: content!, heart: 0, qa: 0)
         postDatas.append(newData)
         postCollectionView.reloadData()
     }
@@ -83,10 +83,10 @@ extension MypostVC: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let detailVC = UIStoryboard(name: "ContentDetail", bundle: nil).instantiateViewController(withIdentifier: ContentDetailVC.identifier)
                 as? ContentDetailVC else { return }
-        detailVC.content = postDatas[indexPath.row].title
-        detailVC.postTitle = "\(postDatas[indexPath.row])"
-        detailVC.like = postDatas[indexPath.row].likeCount
-        detailVC.comment = postDatas[indexPath.row].commentCount
+        detailVC.content = postDatas[indexPath.row].content
+        detailVC.postTitle = postDatas[indexPath.row].title
+        detailVC.like = postDatas[indexPath.row].heart
+        detailVC.comment = postDatas[indexPath.row].qa
         
         self.parent?.navigationController?.pushViewController(detailVC, animated: true)
     }

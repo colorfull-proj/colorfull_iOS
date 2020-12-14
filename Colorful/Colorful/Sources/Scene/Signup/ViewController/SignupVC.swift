@@ -8,6 +8,9 @@
 import UIKit
 
 class SignupVC: UIViewController {
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 
     // MARK: - UI
     @IBOutlet weak var emailView: UIView!
@@ -49,7 +52,7 @@ class SignupVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.navigationBar.isHidden = false
+        navigationController?.setNavigationBarHidden(false, animated: false)
         navigationController?.navigationBar.topItem?.title = ""
         navigationController?.navigationBar.barTintColor = .black
     }

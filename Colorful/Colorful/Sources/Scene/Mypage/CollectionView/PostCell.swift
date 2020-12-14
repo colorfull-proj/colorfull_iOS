@@ -24,10 +24,10 @@ class PostCell: UICollectionViewCell {
     @IBOutlet weak var widthConstraint: NSLayoutConstraint!
     
     // MARK: - Init
-    func bind(_ dto: PostCellDTO) {
+    func bind(_ dto: WorryDTO) {
         titleLabel.text = dto.title
-        likeCountLabel.text = "\(dto.likeCount)"
-        commentCountLabel.text = "\(dto.commentCount)"
+        likeCountLabel.text = "\(dto.heart)"
+        commentCountLabel.text = "\(dto.qa)"
     }
     
     // MARK: - Life Cycle

@@ -14,6 +14,10 @@ struct CommentsDTO {
 }
 
 class ContentDetailVC: UIViewController {
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     static let identifier = "ContentDetailVC"
     
     // MARK: - UI
@@ -82,7 +86,7 @@ class ContentDetailVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.navigationBar.isHidden = false
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
         self.navigationController?.navigationBar.topItem?.title = ""
         self.navigationController?.navigationBar.tintColor = .white
         self.navigationController?.navigationBar.barTintColor = .black

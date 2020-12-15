@@ -110,7 +110,7 @@ class MyPageVC: UIViewController {
     }
     
     var mypostCount: Int = 3
-    var mypictureCount: Int = 6
+    var mypictureCount: Int = 5
     var likeCount: Int = 4
     var authorCount: Int = 4
     

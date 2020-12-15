@@ -71,7 +71,7 @@
 
 ---
 
-###팀원
+### 팀원
 
 * **[🍎 iOS 개발 윤동민](https://github.com/dongminyoon)**
 * **[🍎 iOS 개발 박주연](https://github.com/juyeonblue)**
